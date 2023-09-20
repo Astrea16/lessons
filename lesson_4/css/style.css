@@ -1,0 +1,63 @@
+/* -підключення обнуляючого файлу- */
+@import url(reset.css);
+/* 
+* {
+ color: blue; 
+} */
+/* колір для всіх div в файлі */
+div {
+  color: yellow; 
+}
+/* Обирає всі елементи <ul> всередині елемента <header> */
+header > ul{
+	color: #000;
+ }
+
+ /* Обирає всі елементи з класом .header-item  всередині елемента з класом .header-list. Більший пріоритет ніж у попереднього в коді*/
+.header-list  .header-item {
+   color: blueviolet; 
+}
+ 
+h1 {
+  color: green;
+}
+/* li{
+	color: blue;
+} */
+.title {
+  color: greenyellow;
+}
+/* .title ~ .text {
+  color: #000;
+} */
+/*Обирає всі елементи з класом .text на сторінці    */
+.text {
+  color: red;
+}
+/*Обирає всі елементи <a> на сторінці, які вкладені в елемент <p>, який вкладений в елемент з класом .text */
+.text > p > a {
+  color: brown;
+}
+/* Обирає перший елемент з класом .text, який розміщується відразу після елемента з класом .monument-title */
+.monument-title + .text {
+  color: purple;
+}
+/* Обирає кожен елемент <ul>, якому передує елемент з классом .monument-title */
+.monument-title ~ ul {
+  color: aqua;
+}
+/* Обирає перший елемент <ul>, який розміщується відразу після елемента з класом .scientist-text */
+.scientist-text + ul {
+  color: crimson;
+}
+.footer-info h3 {
+  color: pink;
+}
+/* Обирає всі елементи <a> у яких батьківський елемент з класом .footer-title */
+.footer-title > a {
+  color: violet;
+}
+/* селектор атрибута */
+[class*="-text"] {
+  color: #000;
+}
