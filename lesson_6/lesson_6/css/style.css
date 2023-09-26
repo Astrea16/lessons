@@ -1,0 +1,139 @@
+@import url("reset.css");
+
+/*-Підключаємо шрифти------------------------------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text:regular&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: #7d7d7d;
+}
+[class*="container"] {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header,
+.footer {
+  padding: 25px 5px;
+}
+
+.header-list,
+.footer-list {
+  text-align: center;
+}
+.list {
+}
+.list-item {
+  display: inline-block;
+  margin: 0 50px;
+}
+.list-link {
+  text-transform: uppercase;
+  color: #6b77e5;
+}
+.page {
+}
+.page-container {
+}
+.page-whyus {
+  margin: 0 auto;
+}
+.whyus-top {
+  margin-bottom: 40px;
+}
+.whyus {
+  max-width: 715px;
+}
+.whyus-image {
+  margin-bottom: 37px;
+}
+.whyus-image img {
+  max-width: 100%;
+}
+.whyus-title,
+.whyus-sub-title,
+.benefits-title,
+.benefits-title-list {
+  font-family: "Poppins", sans-serif;
+  color: #37393f;
+}
+.whyus-title {
+  font-size: 30px;
+  line-height: 1.27; /* 38/30 */
+}
+.whyus-text {
+  margin-bottom: 42px;
+}
+.text {
+  line-height: 1.46; /* 26.31/18 */
+}
+.whyus-sub-title {
+  color: #6b77e5;
+  line-height: 1.27; /* 25.4/20 */
+  margin-bottom: 12px;
+}
+.whyus-blocks {
+}
+.block {
+}
+.block-image,
+.block-benefits {
+  display: inline-block;
+  max-width: 50%;
+}
+.block-benefits {
+}
+.benefits {
+  padding-left: 29px;
+}
+.benefits-title {
+  font-size: 25px;
+  line-height: 1.27; /* 31.75/25 */
+  margin-bottom: 15px;
+}
+.benefits-title-list {
+  font-size: 20px;
+  line-height: 1.27; /* 25.4/20 */
+  color: #40ddb6;
+  margin-bottom: 21.5px;
+}
+.benefits-list > li {
+  padding-left: 35px;
+  margin: 0px 0px 30px 0px;
+}
+.footer {
+}
+.footer-list {
+}
+
+/*====jewellery===========================================================================================*/
+.page {
+}
+.page-container {
+}
+.page-wedo {
+}
+.wedo, .image{
+	display: inline-block;
+}
+.wedo {
+max-width: 600px;
+}
+.wedo-content {
+}
+.content {
+}
+.content-sub-title {
+}
+.content-title {
+}
+.content-text {
+}
+.page-image {
+}
+.image {
+	max-width: 571px;
+}
