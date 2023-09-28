@@ -1,0 +1,259 @@
+/*-Підключаємо шрифти------------------------------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text:regular&display=swap");
+
+@import url("fonts.css");
+
+@import url("reset.css");
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: #7d7d7d;
+}
+[class*="container"] {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header,
+.footer {
+  padding: 25px 5px;
+}
+
+.header-list,
+.footer-list {
+  text-align: center;
+}
+
+.list-item {
+  display: inline-block;
+  margin: 0 50px;
+  padding: 10px 5px;
+}
+.list-link {
+  text-transform: uppercase;
+  color: #6b77e5;
+}
+
+.page-whyus {
+  margin: 0 auto;
+}
+
+.whyus-top {
+  margin-bottom: 40px;
+}
+.whyus {
+  max-width: 715px;
+}
+.whyus-image {
+  margin-bottom: 37px;
+}
+.whyus-image img {
+  max-width: 100%;
+}
+.whyus-title,
+.whyus-sub-title,
+.benefits-title,
+.benefits-title-list {
+  font-family: "Poppins", sans-serif;
+  color: #37393f;
+}
+.whyus-title {
+  font-size: 30px;
+  line-height: 1.27; /* 38/30 */
+  margin-bottom: 12.5px;
+}
+.whyus-text {
+  margin-bottom: 42px;
+}
+.text {
+  line-height: 1.46; /* 26.31/18 */
+}
+.whyus-sub-title {
+  color: #6b77e5;
+  line-height: 1.27; /* 25.4/20 */
+  margin-bottom: 12px;
+}
+
+.block {
+  font-size: 0;
+}
+.block-image,
+.block-benefits {
+  display: inline-block;
+  max-width: 357.5px;
+}
+.block-image {
+  vertical-align: top;
+}
+.block-image img {
+  max-width: 100%;
+}
+
+.benefits {
+  padding-left: 29px;
+}
+.benefits-title {
+  font-size: 25px;
+  line-height: 1.27; /* 31.75/25 */
+  margin-bottom: 15px;
+}
+.benefits-title-list {
+  font-size: 20px;
+  line-height: 1.27; /* 25.4/20 */
+  color: #40ddb6;
+  margin-bottom: 21.5px;
+}
+.benefits-list > li {
+  font-size: 18px;
+  padding-left: 25px;
+  margin: 0px 0px 30px 0px;
+  line-height: 1.22; /* 22/18 */
+}
+
+/*===============================================================================================*/
+/*-------jewellery------------------------------------------------------------------------------------*/
+/*===============================================================================================*/
+
+.page-wedo {
+  padding: 30px 0px 30px 0px;
+}
+.wedo,
+.image {
+  display: inline-block;
+}
+.wedo {
+  max-width: 580px;
+}
+
+.content {
+  padding: 0px 20px 0px 0px;
+}
+.content-sub-title {
+  color: #d06b00;
+  font-size: 28px;
+  line-height: 1.21; /* 34/28 */
+  margin-bottom: 12px;
+}
+.content-title {
+  color: #0e333d;
+  font-size: 59px;
+  font-family: "DM Serif Text", serif;
+  line-height: 1.12; /* 65/58 */
+  margin-bottom: 28px;
+}
+.content-text {
+  font-size: 20px;
+  line-height: 1.8; /* 36/20 */
+}
+
+.image {
+  font-size: 0;
+  vertical-align: top;
+  max-width: 571px;
+}
+.image img {
+  max-width: 100%;
+}
+.earring {
+  margin-right: 22px;
+}
+/*===============================================================================================*/
+/*---practice----------------------------------------------------------------------------------------*/
+/*===============================================================================================*/
+.page-euphoria {
+  font-size: 20px;
+  color: #807d7e;
+  font-family: "Causten", sans-serif;
+}
+
+.euphoria-container {
+  max-width: 1250px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.euphoria-items {
+  font-size: 0;
+  margin: 0px 0px 100px 0px;
+}
+
+.item {
+  display: inline-block;
+  max-width: 282px;
+  margin-right: 24px;
+}
+.item:last-child {
+  margin-right: 0;
+}
+.item-image {
+  margin-bottom: 30px;
+}
+.item-block {
+  display: inline-block;
+}
+.item-title {
+  font-weight: 600;
+  font-size: 16px;
+  color: #3c4242;
+  line-height: 1.38; /* 22/16 */
+  margin: 0px 0px 5px 0px;
+}
+.item-brand {
+  font-size: 14px;
+  line-height: 1.29; /* 18/14 */
+  font-weight: 500;
+}
+.item-cost {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.29;
+  padding: 10px 19px;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+}
+
+.euphoria-title,
+.euphoria-subtitle,
+.euphoria-link {
+  font-family: "Core Sans C", sans-serif;
+}
+.euphoria-title {
+  color: #8a33fd;
+  font-size: 28px;
+
+  font-weight: 600;
+  line-height: 1.2; /* 33.5/28 */
+  letter-spacing: 0.56px;
+  margin: 0px 0px 30px 0px;
+}
+.euphoria-subtitle {
+  color: #3fdeff;
+  font-weight: 600;
+  margin: 0px 0px 25px 0px;
+}
+.euphoria-subtitle,
+.text,
+.euphoria-link {
+  line-height: 1.68; /* 33.5/20 */
+  letter-spacing: 0.4px;
+}
+.text{
+	margin-bottom: 25px;
+}
+.text > p {
+  margin: 0px 0px 20px 0px;
+}
+
+.text a {
+  color: #3fdeff;
+  font-weight: 700;
+}
+.euphoria-link {
+  font-weight: 600;
+  color: #f35528;
+  padding: 5px 0;
+}
