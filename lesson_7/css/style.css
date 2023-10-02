@@ -1,0 +1,325 @@
+/*-----Підключаєм шрифти--------------------------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Infant:700&display=swap");
+@import url("fonts.css");
+
+/*===============================================================================================*/
+/*----Обнулення---------------------------------------------------------------------------------------*/
+@import url("reset.css");
+
+/*===============================================================================================*/
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: #7d7d7d;
+}
+[class*="container"] {
+  max-width: 1248px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.text {
+  line-height: 1.46; /* 26.31/18 */
+}
+.title-second {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #37393f;
+}
+/*===============================================================================================*/
+/*---header, footer----------------------------------------------------------------------------------------*/
+.header,
+.footer {
+  padding: 25px 0;
+}
+
+.header-list,
+.footer-list {
+  text-align: center;
+}
+.header-item,
+.footer-item {
+  display: inline-block;
+  padding: 15px 0;
+}
+.header-link,
+.footer-link {
+  margin: 0 50px;
+  padding: 0 5px;
+  text-transform: uppercase;
+  color: #3c34ac;
+  font-weight: 600;
+  border-left: 4px solid #3c34ac;
+  border-right: 4px solid #3c34ac;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.footer-link {
+  opacity: 0.5;
+}
+/*===============================================================================================*/
+/*---------Example 1----------------------------------------------------------------------------------*/
+/*===============================================================================================*/
+
+.licencing-container {
+  padding-top: 30px;
+}
+.licencing-template,
+.licencing-title {
+  text-align: center;
+}
+.licencing-template {
+  margin-bottom: 16px;
+}
+.licencing-square {
+  width: 12px;
+  height: 12px;
+  background-color: #40ddb6;
+  margin-right: 5px;
+  box-shadow: 2px 2px 0px red;
+}
+.licencing-square,
+.licencing-subtitle {
+  display: inline-block;
+}
+.licencing-subtitle,
+.licencing-title,
+.block-licencing-license {
+  color: #37393f;
+}
+.licencing-subtitle {
+  font-weight: 500;
+  line-height: 1.22; /* 22/18 */
+}
+.licencing-title,
+.block-licencing-license {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+.licencing-title {
+  font-size: 60px;
+  line-height: 1.21; /* 72.6/60 */
+  letter-spacing: 2px;
+  margin: 0px 0px 70px 0px;
+  text-shadow: 2px 1px 1px #880c73, 4px 2px 0px white, 6px 4px 4px #880c73;
+}
+.licencing-block {
+  padding: 6px;
+  /* border: 7px double #6495ed; */
+  border-radius: 5px;
+  box-shadow: 0px 0px 13px 1px gray;
+}
+.block-licencing {
+  margin-bottom: 100px;
+}
+.block-licencing-title {
+  line-height: 1.21; /* 48.4/40 */
+  margin: 0px 0px 11px 0px;
+}
+.block-licencing-text {
+  margin: 0px 0px 24px 0px;
+}
+.block-licencing-text a {
+  color: #40ddb6;
+}
+.block-licencing-license {
+  font-size: 30px;
+  line-height: 1.2; /* 36/30 */
+  margin-bottom: 17px;
+  opacity: 0.7;
+}
+.block-licencing-license > span {
+  font-weight: 400;
+  color: #40ddb6;
+  margin-left: 12px;
+}
+/*===============================================================================================*/
+/*----Example 2---------------------------------------------------------------------------------------*/
+/*===============================================================================================*/
+
+.information-container {
+  max-width: 860px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.information-title {
+  line-height: 1.27; /* 50.8/40 */
+  margin-bottom: 13px;
+}
+.information-body {
+  margin-bottom: 100px;
+}
+.information-text {
+  margin-bottom: 35px;
+}
+.information-text > p {
+  margin-bottom: 20px;
+}
+.numbered-list,
+.marked-list {
+  margin-bottom: 35px;
+  padding: 0px 0px 0px 16px;
+  font-weight: 500;
+}
+.numbered-list {
+  padding-top: 5px;
+  box-shadow: inset 0px 0px 16px 3px gray;
+}
+.item-marked,
+.item-numbered {
+  padding: 5px 0;
+  margin-bottom: 15px;
+}
+.item-marked span {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #7d7d7d;
+  border-radius: 50%;
+  margin-right: 12px;
+  vertical-align: middle;
+}
+.item-numbered span {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+/*===============================================================================================*/
+/*----Example-3---------------------------------------------------------------------------------------*/
+
+/*===============================================================================================*/
+.page-clothing {
+  margin-bottom: 100px;
+}
+.clothing {
+  font-family: "Causten", sans-serif;
+  font-size: 20px;
+  margin-bottom: 100px;
+}
+.clothing-container {
+  max-width: 1270px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.clothing-title,
+.content-title,
+.content-link {
+  font-family: "Core Sans C", sans-serif;
+  font-weight: 600;
+}
+.clothing-title {
+  font-size: 28px;
+  color: #3c4242;
+  line-height: 1.19;
+  letter-spacing: 0.56px;
+  margin-bottom: 30px;
+}
+.clothing-title span {
+  display: inline-block;
+  width: 6px;
+  height: 28px;
+  border-radius: 10px;
+  background-color: #8a33fd;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+.content {
+  padding-left: 21px;
+  margin-bottom: 25px;
+}
+.content-block {
+  margin-bottom: 25px;
+}
+.content-title {
+  color: #807d7e;
+  margin: 0px 0px 25px 0px;
+}
+.content-text,
+.content-link {
+  line-height: 1.67;
+  letter-spacing: 0.4px;
+}
+.content-text p {
+  margin-bottom: 20px;
+}
+.content-text a {
+  font-weight: 700;
+}
+/*===============================================================================================*/
+
+/*---Example 4----------------------------------------------------------------------------------------*/
+
+/*===============================================================================================*/
+
+.wedo {
+  font-family: "Cormorant Infant", serif;
+  margin-bottom: 100px;
+}
+.wedo-container {
+  max-width: 1133px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.wedo-content,
+.wedo-image {
+  display: inline-block;
+  font-size: 0;
+}
+.wedo-content {
+  max-width: 572px;
+  vertical-align: middle;
+}
+.wedo-content-subtitle {
+  font-size: 20px;
+}
+.wedo-content-subtitle {
+  color: #d58417;
+  margin-bottom: 27px;
+}
+.wedo-content-title {
+  font-size: 64px;
+  color: #000;
+  margin-bottom: 31px;
+}
+.wedo-content-text {
+  max-width: 500px;
+  font-size: 30px;
+  color: #606060;
+  line-height: 1.4;
+}
+.wedo-image {
+  max-width: 525px;
+  vertical-align: middle;
+}
+.wedo-img {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 235px;
+  margin-right: 40px;
+}
+.wedo-img-earrings {
+  width: 308px;
+  height: 500px;
+  border: 1px solid #502203;
+  margin-right: 0;
+}
+.necklace,
+.earrings {
+  border-radius: 235px;
+}
+.necklace {
+  box-shadow: 10px -14px 0px white,
+   11px -15px 0px #502203;
+}
+
+.earrings {
+  max-width: 305px;
+  margin-left: -11px;
+  margin-top: 19px;
+}
