@@ -1,0 +1,467 @@
+/*--Підключення шрифтів-----------------------------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,700&display=swap");
+
+@import url("fonts.css");
+
+/*===============================================================================================*/
+@import url("reset.css");
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: #7d7d7d;
+}
+
+[class*="container"] {
+  max-width: 1270px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.practice,
+.plan,
+.clothing,
+.fashion,
+.projects {
+  margin-bottom: 150px;
+}
+
+.background-title {
+  font-size: 38px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.background-subtitle {
+  font-size: 22px;
+  line-height: 1.36;
+  margin-bottom: 15px;
+}
+
+.background-text {
+  line-height: 1.46;
+}
+.background-text > p {
+  margin-bottom: 15px;
+}
+/*===============================================================================================*/
+/*--header, footer-----------------------------------------------------------------------------------------*/
+/*===============================================================================================*/
+
+.header,
+.footer {
+  padding: 40px 0;
+  background-color: #45acb9;
+}
+
+.header-list,
+.footer-list {
+  text-align: center;
+}
+.header-item,
+.footer-item {
+  display: inline-block;
+}
+.header-link,
+.footer-link {
+	display: inline-block;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  color: #e56bdd;
+  font-weight: 600;
+  text-shadow: 2px 2px 2px black;
+}
+
+/*===============================================================================================*/
+/*--practice-----------------------------------------------------------------------------------------*/
+/*===============================================================================================*/
+
+.practice {
+  padding : 50px 0;
+  background: url(../img/practice/wshakesp.jpg) 121px 200px no-repeat fixed, url("../img/practice/bg_1.jpg") repeat;
+}
+
+.background-color,
+.background-image,
+.background-position,
+.background-gradient,
+.background,
+.background-contain {
+  margin-bottom: 45px;
+}
+.background-color-title {
+  background-color: #6b77e5;
+  color: #fff;
+  border-radius: 10px;
+}
+.background-color-title,
+.background-color-subtitle {
+  padding-left: 10px;
+}
+.background-color-subtitle {
+  color: #1b18b7;
+  line-height: 1.36; /* 30/22 */
+  background-color: #6be5d7;
+}
+.background-color-text {
+  border: 5px dashed #6be5d7;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: yellow;
+}
+/*===============================================================================================*/
+
+.background-image,
+.background-position {
+  padding: 10px;
+  background-image: url(../img/practice/wshakesp.jpg);
+}
+.background-image-title,
+.background-image-subtitle,
+.background-image-text,
+.background-gradient-title,
+.background-gradient-subtitle,
+.background {
+  color: #fff;
+}
+.background-position-title,
+.background-position-subtitle,
+.background-position-text {
+  color: red;
+}
+.background-position {
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  /* background-position: right bottom;
+..background-position: right top; */
+}
+/*===============================================================================================*/
+.background-gradient,
+.background,
+.background-contain,
+.background-cover {
+  padding: 15px;
+  border-radius: 20px;
+}
+.background-gradient {
+  background-image: linear-gradient(90deg, #3456ac, #aacc89);
+}
+
+.background-gradient-text {
+  color: #1b18b7;
+}
+/*===============================================================================================*/
+.background {
+  background: url(../img/practice/wshakesp.jpg) no-repeat right top,#5c674b
+    linear-gradient(180deg, #ac3456 10%, #aacc89 20%, #e56bdd 70%) 20px 10px / 500px 100% no-repeat;
+}
+
+/*===============================================================================================*/
+.background-contain {
+  background: url(../img/practice/wshakesp.jpg) 50% 0 / contain no-repeat,
+    url(../img/plan/Icon_1.svg) bottom repeat-x;
+
+  border: 14px solid #58dcb6;
+  color: blueviolet;
+  box-shadow: 0px 0px 10px 4px gray;
+}
+/*===============================================================================================*/
+.background-cover {
+  background: url(../img/practice/wshakesp.jpg) 50% 50% / cover no-repeat;
+}
+.background-cover-title {
+  color: #e56bdd;
+}
+.background-cover-text {
+  color: rgb(115, 247, 7);
+}
+
+/*===============================================================================================*/
+/*---Business plan----------------------------------------------------------------------------------------*/
+/*===============================================================================================*/
+
+.plan-container {
+  max-width: 660px;
+}
+.plan-subtitle {
+  font-weight: 500;
+  line-height: 1.22; /* 22/18 */
+  padding-left: 18px;
+  background: url("../img/plan/qsquare.svg") 0 5px no-repeat;
+  margin-bottom: 16px;
+}
+.plan-subtitle,
+.plan-title,
+.plan-item,
+.plan-point-titile,
+.item-title {
+  color: #37393f;
+}
+
+.plan-title {
+  max-width: 420px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.21;
+}
+.plan-title,
+.plan-item,
+.plan-point-titile,
+.projects-title,
+.item-title {
+  font-family: "Poppins", sans-serif;
+}
+
+.plan-text {
+  line-height: 1.46;
+  margin-bottom: 20px;
+}
+.plan-text p {
+  margin-bottom: 15px;
+}
+.plan-list {
+  margin-bottom: 43px;
+}
+.plan-item {
+  font-size: 20px;
+  line-height: 1.5; /* 30/20 */
+  padding-left: 35px;
+  background: url("../img/plan/li.svg") 0 1.5px no-repeat;
+  margin-bottom: 23px;
+  min-height: 30px;
+}
+.plan-points {
+  font-size: 0;
+  margin-bottom: 37px;
+}
+.plan-item,
+.plan-point,
+.plan-point-titile {
+  line-height: 1.5;
+}
+.plan-point {
+  display: inline-block;
+  max-width: 294px;
+  padding: 32px;
+  padding-left: 90px;
+  border: 1px solid #e3e3e3;
+  margin : 0 21px 21px 0;
+  background: url("../img/plan/Icon_1.svg") 32px 32px no-repeat;
+}
+.plan-point-two {
+  background: url("../img/plan/Icon_2.svg") 32px 32px no-repeat;
+  margin-right: 0;
+}
+.plan-point-titile {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 3px;
+}
+.plan-poin-text {
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.plan-lists > a {
+  display: inline-block;
+  padding: 21px 27px;
+  background-color: #6b77e5;
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.22; /* 22/18 */
+  text-transform: capitalize;
+}
+/*===============================================================================================*/
+/*----Clothing---------------------------------------------------------------------------------------*/
+/*===============================================================================================*/
+
+.clothing-body {
+  padding-left: 21px;
+}
+.clothing-title,
+.clothing-block-title,
+.clothing-see,
+.fashion-title {
+  font-family: "Core Sans C", sans-serif;
+}
+.clothing-title {
+  color: #3c4242;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.56px;
+  padding-left: 21px;
+  margin-bottom: 30px;
+  background: url("../img/clothig/line.svg") 0 2.5px no-repeat;
+}
+.clothing-block {
+  margin-bottom: 25px;
+}
+.clothing-block-title,
+.clothing-block-text,
+.clothing-see {
+  font-size: 20px;
+  line-height: 1.68;
+  letter-spacing: 0.4px;
+}
+.clothing-block-title {
+  font-weight: 600;
+
+  margin-bottom: 25px;
+}
+.clothing-block-text,
+.fashion-text,
+.fashion-link {
+  font-family: "Causten", sans-serif;
+}
+.clothing-block-text > p {
+  margin-bottom: 20px;
+}
+.clothing-block-text a {
+  font-weight: 700;
+}
+/*===============================================================================================*/
+/*---fashion----------------------------------------------------------------------------------------*/
+/*===============================================================================================*/
+.page-fashion {
+}
+.fashion {
+}
+
+.fashion-body {
+  border-top-left-radius: 10px;
+  font-size: 0;
+}
+.fashion-content,
+.fashion-image {
+  display: inline-block;
+}
+.fashion-content {
+  max-width: 614px;
+  padding: 183px 74px 160px 74px;
+  background: url("../img/fashion/bg.jpg") 50% 50% / cover no-repeat;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.fashion-title {
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.47;
+  letter-spacing: 0.208px;
+  margin-bottom: 30px;
+}
+.fashion-title,
+.fashion-text {
+  color: #fff;
+}
+.fashion-text {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+}
+.fashion-title,
+.fashion-text span {
+  text-transform: uppercase;
+}
+ 
+.fashion-link {
+  display: inline-block;
+  padding: 12px 44px;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 18px;
+  line-height: 1.22; /* 22/18 */
+  color: #3c4242;
+}
+.fashion-image {
+  max-width: 626px;
+  vertical-align: top;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.fashion-image img{
+	max-width: 100%;
+}
+/*===============================================================================================*/
+/*-----projects--------------------------------------------------------------------------------------*/
+/*===============================================================================================*/
+
+.projects-container {
+  max-width: 1250px;
+  padding: 0 15px;
+}
+.projects-header {
+  text-align: center;
+  margin-bottom: 47px;
+}
+.projects-subtitle {
+  font-weight: 500;
+  color: #37393f;
+  line-height: 1.22;
+  display: inline-block;
+  padding-left: 18px;
+  background: url("../img/plan/qsquare.svg") 0px 5px no-repeat;
+  margin-bottom: 14px;
+}
+.projects-title {
+  color: #37393f;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.21;
+  margin-bottom: 14px;
+}
+.projects-text {
+  max-width: 850px;
+  margin: 0 auto;
+  line-height: 1.46;
+}
+
+.projects-items {
+  margin-bottom: 58px;
+  font-size: 0;
+}
+
+.item {
+  display: inline-block;
+  min-width: 384px;
+  padding-top: 501px;
+  margin-right: 34px;
+}
+.item-one {
+  background: url("../img/projects/img_1.jpg") 0 0 no-repeat;
+}
+.item-two {
+  background: url("../img/projects/img_2.jpg") 0 0 no-repeat;
+}
+.item-three {
+  background: url("../img/projects/img_3.jpg") 0 0 no-repeat;
+  margin-right: 0;
+}
+.item-four {
+  background: url("../img/projects/img_4.jpg") 0 0 no-repeat;
+}
+.item-five {
+  background: url("../img/projects/img_5.jpg") 0 0 no-repeat;
+}
+.item-six {
+  background: url("../img/projects/img_6.jpg") 0 0 no-repeat;
+  margin-right: 0;
+}
+.item-content {
+  padding-top: 24px;
+}
+.item-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.item-daty {
+  font-size: 14px;
+  line-height: 1.46;
+  padding-left: 30px;
+  background: url("../img/projects/calendar.svg") 0 0 no-repeat;
+}
