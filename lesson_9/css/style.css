@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Inter+Tight:regular,500,600&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Infant:700&display=swap");
+@import url("fonts.css");
 
 /*--Підключення обнулюючого файла-----------------------------------------------------------------------------------------*/
 @import url("reset.css");
@@ -19,10 +20,12 @@ body {
 }
 
 .practice,
+.game,
 .benefits,
 .about,
 .work,
-.jewellery {
+.jewellery,
+.to-top {
   margin-bottom: 100px;
 }
 
@@ -35,7 +38,8 @@ body {
 .headline,
 .benefits-caption,
 .title-second,
-.item-title {
+.item-title,
+.game-title {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
@@ -75,9 +79,17 @@ body {
 .header,
 .footer {
   padding: 30px 0;
-  background-color: rgba(245, 16, 50, 0.354);
+  background: linear-gradient(
+    to bottom,
+    rgba(203, 96, 179, 1) 0%,
+    rgba(210, 86, 176, 1) 39%,
+    rgba(219, 74, 173, 0.69) 87%,
+    rgba(222, 71, 172, 0.69) 100%
+  );
 }
-
+.header {
+  box-shadow: 0 0 35px 19px #121514, inset 0 0 35px 5px #626765;
+}
 .header-list,
 .footer-list {
   text-align: center;
@@ -88,12 +100,15 @@ body {
 }
 .header-link,
 .footer-link {
+  font-family: "DrPoDecor", fantasy;
   display: inline-block;
-  padding: 10px 25px;
-  text-transform: uppercase;
-  color: #6b77e5;
+  padding: 5px 20px;
+  font-size: 35px;
+  text-transform: lowercase;
+  color: #152297;
   font-weight: 600;
   border: 3px solid transparent;
+  transition: all 0.5s;
 }
 .header-link::before {
   content: "";
@@ -102,13 +117,13 @@ body {
   height: 24px;
   background: url("../img/practice/parrot.png") 0 0 no-repeat;
   vertical-align: middle;
-  margin: 0px 10px 0px 0px;
+  margin: -2px 10px 0px 0px;
 }
 .header-link:hover,
 .footer-link:hover {
-  color: #910eb9;
-  border: 3px solid #910eb9;
-  border-radius: 5px;
+  color: #2e0d38;
+  border: 3px solid #54076c;
+  border-radius: 20px;
 }
 .header-link:active,
 .footer-link:active {
@@ -125,7 +140,8 @@ body {
 /*----Practice---------------------------------------------------------------------------------------*/
 
 .practice {
-  padding: 20px 0;
+  padding: 50px 0;
+  background-color: rgba(245, 245, 245, 0.573);
 }
 
 .practice-title {
@@ -145,7 +161,7 @@ body {
   line-height: 1.33; /* 40/30 */
   margin-bottom: 25px;
 }
-
+/*-example 1------------------------------------------------------------------------------------------*/
 .practice-content > .text {
   font-size: 20px;
   line-height: 1.5; /* 30/20 */
@@ -161,7 +177,8 @@ body {
   background-color: yellow;
   padding: 5px;
 }
-/*===============================================================================================*/
+
+/*--example 2-----------------------------------------------------------------------------------------*/
 .text-title {
   font-size: 28px;
   color: #9acd32;
@@ -176,7 +193,10 @@ body {
   color: #000;
 }
 
-/*===============================================================================================*/
+/*--example 3-----------------------------------------------------------------------------------------*/
+.content-block:not(:last-child) {
+  margin-bottom: 30px;
+}
 
 .content-link {
   display: inline-block;
@@ -189,6 +209,7 @@ body {
   border: 3px solid #6b77e5;
   border-radius: 10px;
   margin: 0px 0px 20px 0px;
+  transition: all 0.7s;
 }
 
 .content-image {
@@ -201,7 +222,15 @@ body {
 .content:hover .content-image {
   display: block;
 }
-/*===============================================================================================*/
+
+.content-link-two:hover {
+  visibility: hidden;
+}
+.content-link-three:hover {
+  width: 100%;
+  text-align: center;
+}
+/*---example 4----------------------------------------------------------------------------------------*/
 
 .practice-second-images {
   font-size: 0;
@@ -215,6 +244,7 @@ body {
   border: 8px solid #910eb9;
   border-radius: 15px;
   box-shadow: inset 0 0 17px 10px #671b7e;
+  transition: all 0.7s;
 }
 .practice-second-link:not(:last-child) {
   margin-right: 50px;
@@ -223,7 +253,7 @@ body {
 .practice-second-link:hover {
   color: #5a0773;
   border: 8px solid #5a0773;
-  box-shadow: inset 0 0 17px 10px #282629;
+  box-shadow: inset 0 0 17px 10px #4b1661;
 }
 .practice-second-image {
   display: none;
@@ -234,7 +264,7 @@ body {
 .practice-second-image:target {
   display: block;
 }
-/*===============================================================================================*/
+/*--example 5-----------------------------------------------------------------------------------------*/
 
 .practice-lists > *:not(:last-child) {
   margin-bottom: 35px;
@@ -365,6 +395,153 @@ body {
 
 /*===============================================================================================*/
 
+/*--game-----------------------------------------------------------------------------------------*/
+
+.page-game {
+}
+.game {
+}
+.game-container {
+}
+.game-title {
+  font-size: 50px;
+  color: #910eb9;
+  margin: 0px 0px 20px 0px;
+}
+.game-body {
+  padding: 10px;
+
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 0.6138830532212884) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
+.game-start,
+.game-finish {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #ffff00;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 14px;
+  display: inline-block;
+  padding: 27px 10px 10px 10px;
+  font-weight: 600;
+  z-index: 2;
+  cursor: pointer;
+}
+.game-start:hover,
+.game-finish:hover {
+  color: #63f210;
+}
+.game-item {
+  cursor: pointer;
+}
+.game-item-one {
+  width: 70px;
+  height: 150px;
+  background-color: #941d1d;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-top: -20px;
+  visibility: hidden;
+}
+.game-item-two {
+  width: 70%;
+  height: 70px;
+  background-color: #7fffd4;
+  visibility: hidden;
+}
+.game-item-three {
+  width: 70px;
+  height: 150px;
+  margin: 0px 0px 0px 784px;
+  background-color: rgb(201, 20, 81);
+  visibility: hidden;
+}
+.game-item-four {
+  width: 22%;
+  height: 60px;
+  margin-left: 48%;
+  background-color: rgb(154, 112, 216);
+  visibility: hidden;
+}
+.game-item-five {
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  margin: 0 auto;
+  visibility: hidden;
+}
+.game-item-six {
+  width: 50.5%;
+  height: 40px;
+  margin-left: 48%;
+  background-color: #c616c0;
+  visibility: hidden;
+}
+.game-item-seven {
+  width: 30px;
+  height: 250px;
+  background-color: #409855;
+  margin: 0px 0px 0px 96%;
+  visibility: hidden;
+}
+.game-wrapper {
+  text-align: right;
+}
+.game-finish {
+  margin: -20px 0px 0px 0px;
+}
+.game-greeting {
+  font-family: "DrPoDecor", fantasy;
+  font-size: 70px;
+  text-align: center;
+  padding: 10px;
+  color: #000;
+  visibility: hidden;
+  border: 4px solid #000;
+  border-radius: 30%;
+}
+.game-greeting p {
+  display: inline-block;
+}
+.game-greeting p::before {
+  content: "";
+  display: inline-block;
+  width: 42px;
+  height: 50px;
+  margin-right: 15px;
+  background: url(../img/practice/smile.gif) 0 0 no-repeat;
+
+  vertical-align: middle;
+  margin: -12px 0px 0px 0px;
+}
+.game-start:hover ~ .game-item-one,
+.game-item-one:hover,
+.game-item-one:hover ~ .game-item-two,
+.game-item-two:hover,
+.game-item-two:hover ~ .game-item-three,
+.game-item-three:hover,
+.game-item-three:hover ~ .game-item-four,
+.game-item-four:hover,
+.game-item-four:hover ~ .game-item-five,
+.game-item-five:hover,
+.game-item-five:hover ~ .game-item-six,
+.game-item-six:hover,
+.game-item-six:hover ~ .game-item-seven,
+.game-item-seven:hover,
+.game-wrapper:hover ~ .game-greeting,
+.game-greeting:hover ~ p {
+  visibility: visible;
+}
+/*===============================================================================================*/
+
 /*---.benefits ----------------------------------------------------------------------------------------*/
 
 .benefits-container {
@@ -475,19 +652,26 @@ body {
 .item {
   padding: 28px 38px;
   border: 1px solid #e3e3e3;
-  background: url("../img/benefits/icon.svg") 38px 28px no-repeat;
 }
 
-.item-body {
-  padding-left: 48px;
-}
 .item-title {
   font-size: 20px;
   color: #37393f;
   line-height: 1.5;
   margin-bottom: 12px;
 }
+.item-title::before {
+  content: "";
+  display: inline-block;
+  width: 27px;
+  height: 28px;
+  background: url("../img/benefits/icon.svg") 0 0 no-repeat;
+  vertical-align: middle;
+  margin-top: -3px;
+  margin-right: 19px;
+}
 .item-text {
+  padding-left: 46px;
 }
 .item-text p:not(:last-child) {
   margin-bottom: 16px;
@@ -501,11 +685,12 @@ body {
   line-height: 1.22;
   text-transform: capitalize;
   color: #fff;
-  transition: background-color 0.2s ease-out 0.4s;
+  transition: all 0.3s ease-out 0.4s;
 }
 
 .about-link:hover {
   background-color: #40ddb6;
+  border-radius: 20px;
 }
 /*===============================================================================================*/
 
@@ -549,7 +734,7 @@ body {
   width: 72px;
   height: 95px;
   margin-top: -95px;
-  transition: background 0.2s;
+  transition: background 0.7s;
 }
 .card:not(:last-child) {
   margin-right: 31px;
@@ -571,6 +756,9 @@ body {
 }
 .card-three:hover::before {
   background: url("../img/work/icon-blue_3.svg") 0 0 no-repeat;
+}
+.card:hover .card-link {
+  border-bottom: 3px solid #6b77e5;
 }
 .card-body > *:last-child {
   margin-bottom: 0;
@@ -594,10 +782,7 @@ body {
   display: inline-block;
   line-height: 1.2;
   border-bottom: 3px solid transparent;
-}
-
-.card-link:hover {
-  border-bottom: 3px solid #6b77e5;
+  transition: border-bottom 0.7s;
 }
 
 /*===============================================================================================*/
@@ -619,23 +804,23 @@ body {
   display: inline-block;
 }
 .jewellery-content {
-	vertical-align: top;
-	padding-top: 118px;
-	padding-right: 22px;
-   max-width: 488px;
+  vertical-align: top;
+  padding-top: 118px;
+  padding-right: 22px;
+  max-width: 488px;
 }
 .jewellery-title {
   font-size: 60px;
   line-height: 1.15;
-  
 }
 .jewellery-title::after {
   content: "";
-  display: inline-block;
-  width: 62%;
+  display: block;
+  width: 65%;
   height: 3px;
   background-color: #78473b;
- }
+  margin-top: 13px;
+}
 .jewellery-title,
 .card-jewellery-title,
 .card-jewellery-name,
@@ -655,7 +840,9 @@ body {
   display: inline-block;
   max-width: 332px;
   width: 100%;
+   
 }
+ 
 .card-jewellery:first-child {
   vertical-align: top;
   padding-top: 30px;
@@ -668,6 +855,14 @@ body {
   border: 1px solid #000;
   width: 332px;
   height: 376px;
+}
+.jewellery-card:hover  .card-jewellery-image {
+	box-shadow: inset 3px 3px 10px gray;
+	transition: all 0.5s;
+}
+.jewellery-card:hover .card-jewellery-name span{
+	text-shadow: 3px -2px 1px gray;
+	transition: text-shadow 1s;
 }
 .card-jewellery-image img {
   max-width: 100%;
@@ -685,4 +880,29 @@ body {
 .card-jewellery-title {
   font-size: 46px;
   max-width: 334px;
+}
+
+/*===============================================================================================*/
+.to-top {
+  text-align: center;
+}
+.to-top-container {
+}
+
+.to-top-link {
+  font-family: "DrPoDecor", fantasy;
+  font-size: 80px;
+  line-height: 1.3;
+  color: #45cca1;
+  padding: 10px 50px;
+  border: 5px solid #45cca1;
+  border-radius: 30px 20px 50px 10px;
+  box-shadow: inset 0 0 17px 14px #53d0a8;
+  text-shadow: 0 0 5px #121514;
+  transition: all 0.5s;
+}
+
+.to-top-link:hover {
+  text-shadow: 0 0 5px #c70a0a, 1px 1px 5px #fff, 3px 3px 5px #363131;
+  box-shadow: inset 0 0 17px 14px #53d0a8, 0 0 5px #c70a0a, 1px 1px 5px #fff, 3px 3px 5px #363131;
 }

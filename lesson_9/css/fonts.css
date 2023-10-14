@@ -1,0 +1,8 @@
+@font-face {
+	font-family: "DrPoDecor";
+	src: url("../fonts/DrPoDecorRu.woff2") format("woff2"), 
+	url("../fonts/DrPoDecorRu.woff") format("woff");
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+ }

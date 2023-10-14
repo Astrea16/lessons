@@ -10,15 +10,15 @@
 
 <body>
 	<div>
-		<header class="header">
+		<header id="header" class="header">
 			<div class="header-container">
 				<ul class="header-list">
 					<li class="header-item"><a href="#practice" class="header-link">Practice</a></li>
-					<li class="header-item"><a href="#" class="header-link">Game</a></li>
+					<li class="header-item"><a href="#game" class="header-link">Game</a></li>
 					<li class="header-item"><a href="#benefits" class="header-link">Benefits</a></li>
 					<li class="header-item"><a href="#about" class="header-link">About</a></li>
 					<li class="header-item"><a href="#work" class="header-link">Work</a></li>
-					<li class="header-item"><a href="#" class="header-link">Jewellery</a></li>
+					<li class="header-item"><a href="#jewellery" class="header-link">Jewellery</a></li>
 				</ul>
 			</div>
 		</header>
@@ -26,7 +26,7 @@
 			<div class="page">
 				<div id="practice" class="page-practice practice">
 					<div class="practice-container">
-						<h1 class="practice-title">Practice</h1>
+						<h2 class="practice-title">Practice</h2>
 						<div class="practice-content">
 							<h2 class="practice-example">Example 1</h2>
 							<div class="practice-text text">
@@ -65,11 +65,18 @@
 						</div>
 						<div class="practice-content content">
 							<h2 class="content-example practice-example">Example 3</h2>
-							<a href="#" class="content-link">hover over the parent element</a>
-							<div class="content-image">
-								<img src="img/practice/football.jpg" alt="football_players">
+							<div class="content-block">
+								<a href="#" class="content-link">hover over the parent element</a>
+								<div class="content-image">
+									<img src="img/practice/football.jpg" alt="football_players">
+								</div>
 							</div>
-
+							<div class="content-block">
+								<a href="#" class="content-link content-link-two">Сховаюся від тебе</a>
+							</div>
+							<div class="content-block">
+								<a href="#" class="content-link content-link-three">А я стану широкою</a>
+							</div>
 						</div>
 						<div class="practice-content">
 							<h2 class="practice-example">Example 4</h2>
@@ -87,10 +94,11 @@
 								</p>
 								<p>
 									Jack London was an American novelist, journalist and activist. A pioneer of commercial fiction and American magazines, he was one of the first American authors to become an international celebrity and earn a large fortune from writing. He was also an innovator in the genre that would later become known as science fiction.
+								</p>
 								<div class="practice-second-image" id="practice-second-image">
 									<img src="img/practice/ring.jpg" alt="phone">
 								</div>
-								</p>
+
 								<p>
 									Jack London was an American novelist, journalist and activist. A pioneer of commercial fiction and American magazines, he was one of the first American authors to become an international celebrity and earn a large fortune from writing. He was also an innovator in the genre that would later become known as science fiction.
 								</p>
@@ -148,6 +156,27 @@
 									<li class="practice-item">I am a punst of the list</li>
 									<li class="practice-item">I am a punst of the list</li>
 								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="game" class="page-game game">
+					<div class="game-container">
+						<h2 class="game-title">Game</h2>
+						<div class="game-body">
+							<div class="game-start">start</div>
+							<div class="game-item game-item-one"></div>
+							<div class="game-item game-item-two"></div>
+							<div class="game-item game-item-three"></div>
+							<div class="game-item game-item-four"></div>
+							<div class="game-item game-item-five"></div>
+							<div class="game-item game-item-six"></div>
+							<div class="game-item game-item-seven"></div>
+							<div class="game-wrapper">
+								<div class="game-finish">finish</div>
+							</div>
+							<div class="game-greeting">
+								<p>Ти просто молодець!!!</p>
 							</div>
 						</div>
 					</div>
@@ -235,11 +264,11 @@
 
 					</div>
 				</div>
-				<div class="page-work work">
+				<div id="work" class="page-work work">
 					<div class="work-container">
 						<div class="work-header">
 							<h3 class="work-subtitle subtitle">Work Process</h3>
-							<h2 class="work-title title-second">How We Work</h1>
+							<h2 class="work-title title-second">How We Work</h2>
 						</div>
 						<div class="work-cards">
 							<div class="worrk-card card card-one">
@@ -274,7 +303,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="page-jewellery jewellery">
+				<div id="jewellery" class="page-jewellery jewellery">
 					<div class="jewellery-container">
 						<div class="jewellery-body">
 							<div class="jewellery-content">
@@ -282,29 +311,32 @@
 							</div>
 							<div class="jewellery-images">
 								<div class="jewellery-cards">
-									<div class="jewellery-card card-jewellery">
+									<a href="#" class="jewellery-card card-jewellery">
 										<div class="card-jewellery-image">
 											<img src="img/jewellery/ring.jpg" alt="ring">
 										</div>
 										<div class="card-jewellery-content">
-											<h4 class="card-jewellery-name">Embossed hoop earrings</h4>
+											<h4 class="card-jewellery-name"><span>Embossed hoop earrings</span></h4>
 											<div class="card-jewellery-cost">$144.00</div>
 										</div>
-									</div>
-									<div class="jewellery-card card-jewellery">
+									</a>
+									<a href="#" class="jewellery-card card-jewellery">
 										<h3 class="card-jewellery-title">#02 <br> new jewellery collection</h3>
 										<div class="card-jewellery-image">
 											<img src="img/jewellery/two_ings.jpg" alt="ring">
 										</div>
 										<div class="card-jewellery-contet">
-											<h4 class="card-jewellery-name">Embossed hoop earrings</h4>
+											<h4 class="card-jewellery-name"><span>Embossed hoop earrings</span></h4>
 											<div class="card-jewellery-cost">$144.00</div>
 										</div>
-									</div>
+									</a>
 								</div>
 							</div>
 						</div>
 					</div>
+				</div>
+				<div class="to-top">
+					<div class="to-top-container"><a href="#header" class="to-top-link">to the top</a></div>
 				</div>
 			</div>
 		</main>
@@ -312,11 +344,11 @@
 			<div class="footer-container">
 				<ul class="footer-list">
 					<li class="footer-item"><a href="#practice" class="footer-link">Practice</a></li>
-					<li class="footer-item"><a href="#" class="footer-link">Game</a></li>
+					<li class="footer-item"><a href="#game" class="footer-link">Game</a></li>
 					<li class="footer-item"><a href="#benefits" class="footer-link">Benefits</a></li>
 					<li class="footer-item"><a href="#about" class="footer-link">About</a></li>
 					<li class="footer-item"><a href="#work" class="footer-link">Work</a></li>
-					<li class="footer-item"><a href="#" class="footer-link">Jewellery</a></li>
+					<li class="footer-item"><a href="#jewerlly" class="footer-link">Jewellery</a></li>
 				</ul>
 			</div>
 		</footer>
