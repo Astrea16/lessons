@@ -1,0 +1,870 @@
+/*--Підключення шрифтів-----------------------------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Inter+Tight:regular,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Infant:700&display=swap");
+@import url("fonts.css");
+
+/*--Підключення обнулюючого файла-----------------------------------------------------------------------------------------*/
+@import url("reset.css");
+
+body {
+  font-family: " Inter", sans-serif;
+  font-size: 18px;
+  color: #7d7d7d;
+}
+
+[class*="container"] {
+  max-width: 1270px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.practice,
+.game,
+.benefits,
+.about,
+.work,
+.jewellery,
+.to-top {
+  margin-bottom: 100px;
+}
+
+.title {
+  font-size: 30px;
+  line-height: 1.27;
+  color: #37393f;
+}
+.title,
+.headline,
+.benefits-caption,
+.title-second,
+.item-title,
+.game-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.headline {
+  font-size: 20px;
+  line-height: 1.27;
+}
+
+.text {
+  line-height: 1.46;
+}
+.text p:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-weight: 500;
+}
+
+.subtitle::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #40ddb6;
+  margin-right: 6px;
+}
+.subtitle,
+.title-second {
+  color: #37393f;
+  line-height: 1.21;
+}
+/*===============================================================================================*/
+/*---header, footer----------------------------------------------------------------------------------------*/
+
+.header,
+.footer {
+  padding: 30px 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(203, 96, 179, 1) 0%,
+    rgba(210, 86, 176, 1) 39%,
+    rgba(219, 74, 173, 0.69) 87%,
+    rgba(222, 71, 172, 0.69) 100%
+  );
+}
+.header {
+  box-shadow: 0 0 35px 19px #121514, inset 0 0 35px 5px #626765;
+}
+.header-list,
+.footer-list {
+  text-align: center;
+}
+.header-item,
+.footer-item {
+  display: inline-block;
+}
+.header-link,
+.footer-link {
+  font-family: "DrPoDecor", fantasy;
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 35px;
+  text-transform: lowercase;
+  color: #152297;
+  font-weight: 600;
+  border: 3px solid transparent;
+  transition: all 0.5s;
+}
+.header-link::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url("../img/practice/parrot.png") 0 0 no-repeat;
+  vertical-align: middle;
+  margin: -2px 10px 0px 0px;
+}
+.header-link:hover,
+.footer-link:hover {
+  color: #2e0d38;
+  border: 3px solid #54076c;
+  border-radius: 20px;
+}
+.header-link:active,
+.footer-link:active {
+  color: #9acd32;
+  border: 3px solid #9acd32;
+}
+
+/* .header-link:visited,
+.footer-link:visited{
+	color: #b71a1a;
+} */
+/*===============================================================================================*/
+
+/*----Practice---------------------------------------------------------------------------------------*/
+
+.practice {
+  padding: 50px 0;
+  background-color: rgba(245, 245, 245, 0.573);
+}
+
+.practice-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #910eb9;
+  line-height: 1.25; /* 50/40 */
+  margin-bottom: 30px;
+}
+.practice-content:not(:last-child) {
+  margin-bottom: 50px;
+}
+.practice-content > .practice-example {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.33; /* 40/30 */
+  margin-bottom: 25px;
+}
+/*-example 1------------------------------------------------------------------------------------------*/
+.practice-content > .text {
+  font-size: 20px;
+  line-height: 1.5; /* 30/20 */
+}
+
+.practice-text p:first-child {
+  background-color: red;
+  color: #000;
+  padding: 5px;
+}
+.practice-text p:last-child {
+  margin-bottom: 0;
+  background-color: yellow;
+  padding: 5px;
+}
+
+/*--example 2-----------------------------------------------------------------------------------------*/
+.text-title {
+  font-size: 28px;
+  color: #9acd32;
+  line-height: 1.28; /* 36/28 */
+}
+.text > *:not(:last-child) {
+  margin-bottom: 15px;
+}
+.practice-text-first p:first-of-type,
+.practice-text-first p:last-of-type {
+  text-transform: uppercase;
+  color: #000;
+}
+
+/*--example 3-----------------------------------------------------------------------------------------*/
+.content-block:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.content-link {
+  display: inline-block;
+  font-size: 25px;
+  color: #6b77e5;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  padding: 20px 40px;
+  border: 3px solid #6b77e5;
+  border-radius: 10px;
+  margin: 0px 0px 20px 0px;
+  transition: all 0.7s;
+}
+
+.content-image {
+  display: none;
+}
+.content:hover .content-link {
+  color: #9acd32;
+  border-color: #9acd32;
+}
+.content:hover .content-image {
+  display: block;
+}
+
+.content-link-two:hover {
+  visibility: hidden;
+}
+.content-link-three:hover {
+  width: 100%;
+  text-align: center;
+}
+/*---example 4----------------------------------------------------------------------------------------*/
+
+.practice-second-images {
+  font-size: 0;
+}
+.practice-second-link {
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #910eb9;
+  border: 8px solid #910eb9;
+  border-radius: 15px;
+  box-shadow: inset 0 0 17px 10px #671b7e;
+  transition: all 0.7s;
+}
+.practice-second-link:not(:last-child) {
+  margin-right: 50px;
+  margin-bottom: 10px;
+}
+.practice-second-link:hover {
+  color: #5a0773;
+  border: 8px solid #5a0773;
+  box-shadow: inset 0 0 17px 10px #4b1661;
+}
+.practice-second-image {
+  display: none;
+}
+.practice-second-image img {
+  max-width: 100%;
+}
+.practice-second-image:target {
+  display: block;
+}
+/*--example 5-----------------------------------------------------------------------------------------*/
+
+.practice-lists > *:not(:last-child) {
+  margin-bottom: 35px;
+}
+.practice-list-one {
+  background-color: #f7c9c9;
+}
+.practice-list-one,
+.practice-list-two,
+.practice-list-three,
+.practice-list-four {
+  padding: 15px;
+}
+.practice-item {
+  font-size: 22px;
+  line-height: 1.36; /* 30/22 */
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.practice-item:last-child {
+  margin-bottom: 0;
+}
+.practice-list-two {
+  border: 2px solid #000;
+  counter-reset: item;
+}
+.practice-list-one > li:nth-child(odd) {
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 30px;
+}
+.practice-list-one > li:first-child::before,
+.practice-list-one > li:last-child::after {
+  content: "";
+  display: inline-block;
+  width: 47px;
+  height: 56px;
+  background: url("../img/practice/boy.gif") 0 0 no-repeat;
+}
+.practice-list-one > li:first-child::before {
+  margin-right: 10px;
+}
+.practice-list-one > li:last-child::after {
+  margin-left: 10px;
+}
+.practice-list-two > li:nth-child(even) {
+  background-image: linear-gradient(45deg, #9acd32 10%, #56aacc 70%, #aabb99 100%);
+  color: #b52929;
+}
+
+.practice-list-three > li:nth-child(3n + 1) {
+  font-style: italic;
+  font-size: 25px;
+  color: #2812b6;
+}
+.practice-list-three > li:nth-child(3n + 2) {
+  color: red;
+}
+
+.practice-list-two > li::before {
+  counter-increment: item;
+  content: counter(item) ". ";
+  display: inline-block;
+  color: #000;
+  font-size: 25px;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  margin-right: 10px;
+  text-shadow: 2px -2px 2px #ee0ad7;
+}
+.practice-list-three > li::before {
+  content: "";
+  background: url("../img/practice/logo.svg") 0 0 no-repeat;
+  width: 29px;
+  height: 29px;
+  display: inline-block;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+.practice-list-four {
+  border: 10px solid #000;
+  border-radius: 20px;
+}
+
+.practice-list-four > .practice-item {
+  font-size: 25px;
+}
+
+.practice-list-four .practice-item ul {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.practice-list-four > .practice-item:nth-child(2) {
+  cursor: pointer;
+  color: red;
+}
+.practice-list-four > .practice-item:not(:nth-child(2))::before,
+.practice-list-four > .practice-item:nth-child(2)::before {
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url("../img/practice/no.png") 0 0 no-repeat;
+  margin: 0 15px 0px 0px;
+}
+.practice-list-four > .practice-item:nth-child(2)::before {
+  background: url("../img/practice/yes.png") 0 0 no-repeat;
+  margin-right: 15px;
+}
+.practice-list-four .practice-item ul li::before {
+  content: "";
+  display: inline-block;
+  width: 42px;
+  height: 50px;
+  margin-right: 15px;
+  background: url("../img/practice/smile.gif") 0 0 no-repeat;
+  vertical-align: middle;
+}
+.practice-list-four ul {
+  display: none;
+}
+
+.practice-list-four .practice-item:hover ul {
+  display: block;
+}
+
+/*===============================================================================================*/
+
+/*--game-----------------------------------------------------------------------------------------*/
+
+.game-title {
+  font-size: 50px;
+  color: #910eb9;
+  margin: 0px 0px 20px 0px;
+}
+.game-body {
+  padding: 20px;
+
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 0.6138830532212884) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
+.game-start,
+.game-finish {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  border-radius: 50%;
+  background: url("../img/jewellery/flower.gif") center no-repeat;
+  text-transform: uppercase;
+  color: #ffff00;
+  font-size: 14px;
+  display: inline-block;
+  padding: 27px 10px 10px 10px;
+  font-weight: 600;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.game-start:hover,
+.game-finish:hover {
+  color: #63f210;
+}
+.game-item {
+  cursor: pointer;
+  background: url("../img/jewellery/space.webp") 0 0 repeat;
+}
+.game-finish,
+.game-item-one,
+.game-item-two,
+.game-item-three,
+.game-item-four,
+.game-item-five,
+.game-item-six,
+.game-item-seven,
+.game-greeting {
+  visibility: hidden;
+}
+.game-item-one {
+  width: 70px;
+  height: 150px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-top: -20px;
+}
+.game-item-two {
+  width: 70%;
+  height: 70px;
+}
+.game-item-three {
+  width: 70px;
+  height: 150px;
+  margin: 0px 0px 0px 64.2%;
+}
+.game-item-four {
+  width: 22%;
+  height: 60px;
+  margin-left: 48%;
+}
+.game-item-five {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+.game-item-six {
+  width: 50.5%;
+  height: 40px;
+  margin-left: 47.99%;
+}
+.game-item-seven {
+  width: 30px;
+  height: 250px;
+  margin: 0px 0px 0px 96%;
+}
+
+.game-finish {
+  margin: -20px 0px 0px 94.4%;
+}
+.game-greeting {
+  font-family: "DrPoDecor", fantasy;
+  font-size: 70px;
+  text-align: center;
+  padding: 10px;
+  color: #000;
+  border: 4px solid #000;
+  border-radius: 30%;
+}
+.game-greeting p {
+  display: inline-block;
+}
+.game-greeting p::before {
+  content: "";
+  display: inline-block;
+  width: 42px;
+  height: 50px;
+  margin-right: 15px;
+  background: url(../img/practice/smile.gif) 0 0 no-repeat;
+  vertical-align: middle;
+  margin: -12px 0px 0px 0px;
+}
+ 
+.game-start:hover + .game-item,
+.game-item:hover,
+.game-item:hover + .game-item,
+.game-item:hover + .game-finish,
+.game-finish:hover,
+.game-finish:hover + .game-greeting{
+	visibility: visible;
+}
+/*===============================================================================================*/
+
+/*---.benefits ----------------------------------------------------------------------------------------*/
+
+.benefits-container {
+  max-width: 722px;
+}
+.benefits-content:not(:last-child) {
+  margin-bottom: 42px;
+}
+.benefits-title {
+  margin-bottom: 12px;
+}
+
+.benefits-text:not(:last-child) {
+  margin-bottom: 42px;
+}
+
+.benefits-headline {
+  color: #6b77e5;
+  margin-bottom: 12px;
+}
+
+.benefits-our {
+  margin: 0px 0px 50px 0px;
+  font-size: 0;
+}
+.benefits-image {
+  vertical-align: top;
+  margin-right: 29px;
+}
+.benefits-image img {
+  max-width: 100%;
+}
+.benefits-image,
+.benefits-lists {
+  display: inline-block;
+  max-width: 332px;
+}
+.benefits-lists > *:last-child {
+  margin-bottom: 0;
+}
+.benefits-caption {
+  margin-bottom: 21px;
+  font-size: 25px;
+  font-weight: 600;
+}
+.benefits-list-title {
+  color: #40ddb6;
+  font-size: 20px;
+  margin-bottom: 21px;
+}
+
+.benefits-item {
+  font-size: 18px;
+  line-height: 1.27;
+}
+.benefits-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+.benefits-item::before {
+  content: "";
+  display: inline-block;
+  width: 27px;
+  height: 28px;
+  background: url("../img/benefits/icon.svg") center / contain no-repeat;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+/*===============================================================================================*/
+
+/*-----.about--------------------------------------------------------------------------------------*/
+
+.about > *:last-child {
+  margin-bottom: 0;
+}
+.about-container {
+  max-width: 705px;
+  padding: 0 15px;
+}
+.about-header {
+  margin: 0px 0px 12px 0px;
+}
+
+.about-subtitle {
+  margin-bottom: 16px;
+}
+.about-title {
+  max-width: 420px;
+}
+.title-second {
+  font-size: 40px;
+  font-weight: 700;
+}
+.about-text {
+  margin-bottom: 48px;
+}
+
+.about-list {
+  margin-bottom: 48px;
+}
+.about-item:not(:last-child) {
+  margin-bottom: 31px;
+}
+.item {
+  padding: 28px 38px;
+  border: 1px solid #e3e3e3;
+}
+
+.item-title {
+  font-size: 20px;
+  color: #37393f;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+.item-title::before {
+  content: "";
+  display: inline-block;
+  width: 27px;
+  height: 28px;
+  background: url("../img/benefits/icon.svg") center / contain no-repeat;
+  vertical-align: middle;
+  margin-top: -3px;
+  margin-right: 19px;
+}
+.item-text {
+  padding-left: 46px;
+}
+.item-text p:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.about-link {
+  display: inline-block;
+  padding: 22px 35px;
+  background-color: #6b77e5;
+  font-weight: 600;
+  line-height: 1.22;
+  text-transform: capitalize;
+  color: #fff;
+  transition: all 0.3s ease-out 0.4s;
+}
+
+.about-link:hover {
+  background-color: #40ddb6;
+  border-radius: 20px;
+}
+/*===============================================================================================*/
+
+/*----work---------------------------------------------------------------------------------------*/
+
+.work-header > *:last-child {
+  margin-bottom: 0;
+}
+.work-header {
+  text-align: center;
+  margin-bottom: 41px;
+}
+.work-subtitle {
+  margin-bottom: 16px;
+}
+
+.work-cards {
+  font-size: 0;
+  padding-top: 36px;
+}
+
+.card {
+  display: inline-block;
+  max-width: 386px;
+  width: 100%;
+  background-color: #f4f4f4;
+  padding: 58px 43px;
+  text-align: center;
+}
+.card::before {
+  content: "";
+  display: inline-block;
+  width: 72px;
+  height: 72px;
+  margin-top: -95px;
+  margin-bottom: 22px;
+  transition: background 0.7s;
+}
+.card:not(:last-child) {
+  margin-right: 31px;
+}
+.card-one::before {
+  background: url("../img/work/icon-green_1.svg") center / contain no-repeat;
+}
+.card-one:hover::before {
+  background: url("../img/work/icon-blue_1.svg") center / contain no-repeat;
+}
+.card-two::before {
+  background: url("../img/work/icon-green_2.svg") center / contain no-repeat;
+}
+.card-two:hover::before {
+  background: url("../img/work/icon-blue_2.svg") center / contain no-repeat;
+}
+.card-three::before {
+  background: url("../img/work/icon-green_3.svg") center / contain no-repeat;
+}
+.card-three:hover::before {
+  background: url("../img/work/icon-blue_3.svg") center / contain no-repeat;
+}
+.card:hover .card-link {
+  border-bottom: 3px solid #6b77e5;
+}
+.card-body > *:last-child {
+  margin-bottom: 0;
+}
+.card-title {
+  font-size: 25px;
+  color: #37393f;
+  line-height: 1.28;
+  margin-bottom: 16px;
+}
+.card-text {
+  font-size: 18px;
+  margin-bottom: 37px;
+}
+
+.card-link {
+  font-size: 18px;
+  color: #6b77e5;
+  display: inline-block;
+  line-height: 1.2;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom 0.7s;
+}
+
+/*===============================================================================================*/
+
+/*--.jewellery-----------------------------------------------------------------------------------------*/
+
+.jewellery-container {
+  max-width: 1244px;
+  padding: 0 15px;
+}
+.jewellery-body {
+  font-size: 0;
+}
+.jewellery-content,
+.jewellery-images {
+  display: inline-block;
+}
+.jewellery-content {
+  vertical-align: top;
+  padding-top: 118px;
+  padding-right: 22px;
+  max-width: 488px;
+}
+.jewellery-title {
+  font-size: 60px;
+  line-height: 1.15;
+}
+.jewellery-title::after {
+  content: "";
+  display: block;
+  width: 65%;
+  height: 3px;
+  background-color: #78473b;
+  margin-top: 13px;
+}
+.jewellery-title,
+.card-jewellery-title,
+.card-jewellery-name,
+.card-jewellery-cost {
+  color: #000;
+  font-family: "Cormorant Infant", serif;
+  font-weight: 700;
+}
+
+.card-jewellery {
+  display: inline-block;
+  max-width: 332px;
+  width: 100%;
+}
+
+.card-jewellery-body {
+  display: inline-block;
+  vertical-align: top;
+}
+.card-jewellery-body:first-child{
+	padding-top: 30px;
+}
+.card-jewellery:first-child {
+  vertical-align: top;
+ }
+.card-jewellery-body:not(:last-child) {
+  margin-right: 45px;
+}
+.card-jewellery-image {
+  margin-bottom: 25px;
+  border: 1px solid #000;
+  height: auto;
+  transition: all 0.5s;
+}
+.card-jewellery:hover .card-jewellery-image {
+  box-shadow: inset 3px 3px 10px gray;
+}
+.card-jewellery:hover .card-jewellery-name {
+  text-shadow: 3px -2px 1px gray;
+}
+.card-jewellery-image img {
+  max-width: 100%;
+  padding-top: 9px;
+  margin-left: 10px;
+  margin-bottom: -9px;
+}
+
+.card-jewellery-name,
+.card-jewellery-cost {
+  font-size: 24px;
+  line-height: 1.4;
+}
+.card-jewellery-name {
+  transition: all 0.5s;
+}
+
+.card-jewellery-title {
+  font-size: 46px;
+  max-width: 332px;
+  margin-bottom: 31px;
+}
+
+/*===============================================================================================*/
+.to-top {
+  text-align: center;
+}
+
+.to-top-link {
+  font-family: "DrPoDecor", fantasy;
+  font-size: 80px;
+  line-height: 1.3;
+  color: #45cca1;
+  padding: 10px 50px;
+  border: 5px solid #45cca1;
+  border-radius: 30px 20px 50px 10px;
+  box-shadow: inset 0 0 17px 14px #53d0a8;
+  text-shadow: 0 0 5px #121514;
+  transition: all 0.5s;
+}
+
+.to-top-link:hover {
+  text-shadow: 0 0 5px #c70a0a, 1px 1px 5px #fff, 3px 3px 5px #363131;
+  box-shadow: inset 0 0 17px 14px #53d0a8, 0 0 5px #c70a0a, 1px 1px 5px #fff, 3px 3px 5px #363131;
+}
