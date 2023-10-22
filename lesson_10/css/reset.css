@@ -1,0 +1,39 @@
+*,
+ *::after,
+*::before{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body,
+html{
+	height: 100%;
+	line-height: 1;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+ul,
+li{
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+img{
+	vertical-align: top;
+}
