@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Geologica&display=swap");
+@import url("reset.css");
+
+[class*="container"] {
+	max-width: 1470px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+ 
+body{
+	font-family: 'Geologica',sans-serif;
+}
+.footer{
+	background-color: #3c4242;
+	color: #fff;
+}
