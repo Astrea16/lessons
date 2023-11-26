@@ -50,19 +50,19 @@
 						<form action="#" class="call-back__form form-call-back">
 							<div class="form-call-back__body">
 								<div class="form-call-back__line">
-									<input type="text" name="name" class="form-call-back__input" autocomplete="off" placeholder="Yore Name">
+									<input type="text" name="name" class="form-call-back__input" autocomplete="off" placeholder="Yore Name" required >
 								</div>
 								<div class="form-call-back__line">
-									<input type="email" name="email" class="form-call-back__input" autocomplete="off" placeholder="Email Address">
+									<input type="email" name="email" class="form-call-back__input" autocomplete="off" placeholder="Email Address" required >
 								</div>
 								<div class="form-call-back__line">
-									<input type="tel" name="phone" class="form-call-back__input" autocomplete="off" placeholder="Phone Number">
+									<input type="tel" name="phone" class="form-call-back__input" autocomplete="off" placeholder="Phone Number" required >
 								</div>
 								<div class="form-call-back__line">
-									<input type="text" name="mail" class="form-call-back__input" placeholder="Subject">
+									<input type="text" name="mail" class="form-call-back__input" placeholder="Subject" required>
 								</div>
 								<div class="form-call-back__line form-call-back__line--textarea">
-									<textarea class="form-call-back__textarea" name="message"></textarea>
+									<textarea class="form-call-back__textarea" name="message" required></textarea>
 								</div>
 							</div>
 							<button class="form-call-back__button button button--call-back">Submit</button>
@@ -77,31 +77,31 @@
 							<div class="form-address__body">
 								<div class="form-address__line">
 									<label for="name" class="form-address__label">First Name*</label>
-									<input id="name" name="name" type="text" autocomplete="off" class="form-address__input" placeholder="First Name">
+									<input id="name" name="name" type="text" autocomplete="off" class="form-address__input" placeholder="First Name" required>
 								</div>
 								<div class="form-address__line">
 									<label for="family-name" class="form-address__label">Last Name*</label>
-									<input id="family-name" name="family-name" type="text" autocomplete="off" class="form-address__input" placeholder="Last Name*">
+									<input id="family-name" name="family-name" type="text" autocomplete="off" class="form-address__input" placeholder="Last Name*" required>
 								</div>
 								<div class="form-address__line">
 									<label for="country" class="form-address__label">Country / Region*</label>
-									<input id="country" name="country" type="text" autocomplete="off" class="form-address__input" placeholder="Country / Region">
+									<input id="country" name="country" type="text" autocomplete="off" class="form-address__input" placeholder="Country / Region" required>
 								</div>
 								<div class="form-address__line">
 									<label for="organization" class="form-address__label">Company Name</label>
-									<input id="organization" name="organization" type="text" autocomplete="off" class="form-address__input" placeholder="Company Name">
+									<input id="organization" name="organization" type="text" autocomplete="off" class="form-address__input" placeholder="Company Name" required>
 								</div>
 								<div class="form-address__line">
 									<label for="address" class="form-address__label">Street Address*</label>
-									<input id="address" name="address" type="text" autocomplete="off" class="form-address__input" placeholder="Street Address*">
+									<input id="address" name="address" type="text" autocomplete="off" class="form-address__input" placeholder="Street Address*" required>
 								</div>
 								<div class="form-address__line">
 									<label for="optional" class="form-address__label">Apt, suite, unit</label>
-									<input id="optional" name="optional" type="text" autocomplete="off" class="form-address__input form-address__input--optional" placeholder="apartment, suite, unit, etc. (optional)">
+									<input id="optional" name="optional" type="text" autocomplete="off" class="form-address__input form-address__input--optional" placeholder="apartment, suite, unit, etc. (optional)" required>
 								</div>
 								<div class="form-address__line">
 									<label for="city" class="form-address__label">Toun/City</label>
-									<input id="city" name="city" type="text" autocomplete="off" class="form-address__input" placeholder="Toun/City">
+									<input id="city" name="city" type="text" autocomplete="off" class="form-address__input" placeholder="Toun/City" required>
 								</div>
 								<div class="form-address__line">
 									<label for="list" class="form-address__label">State*</label>
@@ -114,24 +114,24 @@
 								</div>
 								<div class="form-address__line">
 									<label for="phone" class="form-address__label">Phone*</label>
-									<input id="phone" name="phone" type="tel" autocomplete="off" class="form-address__input" placeholder="Phone">
+									<input id="phone" name="phone" type="tel" autocomplete="off" class="form-address__input" placeholder="Phone" required>
 								</div>
 								<div class="form-address__line">
 									<label for="code" class="form-address__label">Postal Code*</label>
-									<input id="code" name="code" type="text" autocomplete="off" class="form-address__input" placeholder="Postal Code*">
+									<input id="code" name="code" type="text" autocomplete="off" class="form-address__input" placeholder="Postal Code*" required>
 								</div>
 								<div class="form-address__line form-address__line--textarea">
 									<label for="message" class="form-address__label">Delivery Instruction</label>
-									<textarea name="message" id="message" class="form-address__textarea" placeholder="Delivery Instruction"></textarea>
+									<textarea name="message" id="message" class="form-address__textarea" placeholder="Delivery Instruction" required></textarea>
 								</div>
 								<div class="form-address__line">
 									<fieldset class="form-address__group">
 										<div class="form-address__checkbox">
-											<input type="checkbox" name="shipping" id="check-1">
+											<input type="checkbox" name="shipping" id="check-1" required>
 											<label for="check-1">Set as default shipping address</label>
 										</div>
 										<div class="form-address__checkbox">
-											<input type="checkbox" name="billing" id="check-2">
+											<input type="checkbox" name="billing" id="check-2" required>
 											<label for="check-2">Set as default billing address</label>
 										</div>
 									</fieldset>
@@ -152,33 +152,33 @@
 							<div class="form-checking__billing billing-form">
 								<div class="billing-form__line">
 									<label for="name-1" class="billing-form__label">First name*</label>
-									<input class="billing-form__input" type="text" name="name-1" id="name-1" autocomplete="off" placeholder="First name">
+									<input class="billing-form__input" type="text" name="name-1" id="name-1" autocomplete="off" placeholder="First name" required>
 								</div>
 								<div class="billing-form__line">
 									<label for="name-2" class="billing-form__label">Last name*</label>
-									<input class="billing-form__input" type="text" name="name-2" id="name-2" autocomplete="off" placeholder="Last name">
+									<input class="billing-form__input" type="text" name="name-2" id="name-2" autocomplete="off" placeholder="Last name" required>
 								</div>
 								<div class="billing-form__line">
 									<label for="region" class="billing-form__label">Country / Region*</label>
-									<input class="billing-form__input" type="text" name="region" id="region" autocomplete="off" placeholder="Country / Region*">
+									<input class="billing-form__input" type="text" name="region" id="region" autocomplete="off" placeholder="Country / Region*" required>
 								</div>
 								<div class="billing-form__line">
 									<label for="company" class="billing-form__label">Company Name</label>
-									<input class="billing-form__input" type="text" name="company" id="company" autocomplete="off" placeholder="Company (optional)">
+									<input class="billing-form__input" type="text" name="company" id="company" autocomplete="off" placeholder="Company (optional)" required>
 								</div>
 								<div class="billing-form__line">
 									<label class="billing-form__label" for="street">Street Address*</label>
-									<input class="billing-form__input" type="text" name="street" id="street" autocomplete="off" placeholder="House number and street name">
+									<input class="billing-form__input" type="text" name="street" id="street" autocomplete="off" placeholder="House number and street name" required>
 								</div>
 								<div class="billing-form__line">
 									<label for="apt" class="billing-form__label">Apt, suite, unit</label>
-									<input class="billing-form__input" type="text" name="apt" id="apt" autocomplete="off" placeholder="apartment, suite, unit, etc. (optional)">
+									<input class="billing-form__input" type="text" name="apt" id="apt" autocomplete="off" placeholder="apartment, suite, unit, etc. (optional)" required>
 								</div>
 
 								<div class="billing-form__line billing-form__line--lines">
 									<div class="billing-form__item">
 										<label for="toun" class="billing-form__label">City*</label>
-										<input class="billing-form__input" type="text" name="toun" id="toun" autocomplete="off" placeholder="Town / City">
+										<input class="billing-form__input" type="text" name="toun" id="toun" autocomplete="off" placeholder="Town / City" required>
 									</div>
 									<div class="billing-form__item">
 										<label for="state" class="billing-form__label">State*</label>
@@ -191,19 +191,19 @@
 									</div>
 									<div class="billing-form__item">
 										<label for="postal" class="billing-form__label">Postal Code*</label>
-										<input class="billing-form__input" type="text" name="postal" id="postal" autocomplete="off" placeholder="Postal Code">
+										<input class="billing-form__input" type="text" name="postal" id="postal" autocomplete="off" placeholder="Postal Code" required>
 									</div>
 								</div>
 								<div class="billing-form__line ">
 									<label for="tel" class="billing-form__label">Phone**</label>
-									<input class="billing-form__input" type="tel" name="tel" id="tel" autocomplete="off" placeholder="Phone">
+									<input class="billing-form__input" type="tel" name="tel" id="tel" autocomplete="off" placeholder="Phone" required>
 								</div>
 								<fieldset class="billing-form__gruop">
 									<div class="billing-form__continue">
 										<a href="#" class="billing-form__link ">Continue to delivery</a>
 									</div>
 									<div class="billing-form__checkbox">
-										<input class="billing-form__check" type="checkbox" name="checkout" id="checkout">
+										<input class="billing-form__check" type="checkbox" name="checkout" id="checkout" required>
 										<label for="checkout">Save my information for a faster checkout</label>
 									</div>
 								</fieldset>
@@ -275,16 +275,16 @@
 												</div>
 												<div class="card__form form-card">
 													<div class="form-card__line">
-														<input class="form-card__input" type="text" name="card-number" autocomplete="off" placeholder="Card number">
+														<input class="form-card__input" type="text" name="card-number" autocomplete="off" placeholder="Card number" required>
 													</div>
 													<div class="form-card__line">
-														<input class="form-card__input" type="text" name="card-name" autocomplete="off" placeholder="Name of card">
+														<input class="form-card__input" type="text" name="card-name" autocomplete="off" placeholder="Name of card" required>
 													</div>
 													<div class="form-card__line">
-														<input class="form-card__input" type="text" name="date" autocomplete="off" placeholder="Expiration date (MM/YY)">
+														<input class="form-card__input" type="text" name="date" autocomplete="off" placeholder="Expiration date (MM/YY)" required>
 													</div>
 													<div class="form-card__line">
-														<input class="form-card__input" type="text" name="code" autocomplete="off" placeholder="Security Code">
+														<input class="form-card__input" type="text" name="code" autocomplete="off" placeholder="Security Code" required>
 														<button class="form-card__button">
 															<img src="img/cards/eye.svg" alt="ege">
 														</button>
