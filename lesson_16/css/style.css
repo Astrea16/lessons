@@ -637,20 +637,19 @@ body {
   font-weight: 400;
 }
  
-
 .card {
-  display: none;
   height: 0;
   visibility: hidden;
   transform: scale(0.5);
   transition: all 0.8s;
+  opacity: 0;
 }
-#payment-radio:checked ~ .card{
-	display: block;
-	visibility: visible;
-	padding: 30px 23px 0px 37px;
-	height: 100%;
-	transform: scale(1);
+#payment-radio:checked ~ .card {
+  transform: scale(1);
+  visibility: visible;
+  height: auto;
+  padding: 30px 23px 0px 37px;
+  opacity: 1;
 }
 .card__images {
   display: flex;
