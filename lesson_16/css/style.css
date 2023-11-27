@@ -259,6 +259,7 @@ body {
   height: 65px;
   background-color: #ddd;
   padding-left: 40px;
+  padding-right: 10px;	
 }
 .form-call-back__input,
 .form-call-back__line--textarea,
@@ -638,7 +639,6 @@ body {
  
 
 .card {
-   
   display: none;
   height: 0;
   visibility: hidden;
