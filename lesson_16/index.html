@@ -105,7 +105,7 @@
 								</div>
 								<div class="form-address__line">
 									<label for="list" class="form-address__label">State*</label>
-									<select class="form-address__select" name="list" id="list">
+									<select class="form-address__select" name="list" id="list" required>
 										<option value="state">State</option>
 										<option value="alabama">Alabama</option>
 										<option value="hawaii">Hawaii</option>
@@ -127,11 +127,11 @@
 								<div class="form-address__line">
 									<fieldset class="form-address__group">
 										<div class="form-address__checkbox">
-											<input type="checkbox" name="shipping" id="check-1" required>
+											<input type="checkbox" name="shipping" id="check-1">
 											<label for="check-1">Set as default shipping address</label>
 										</div>
 										<div class="form-address__checkbox">
-											<input type="checkbox" name="billing" id="check-2" required>
+											<input type="checkbox" name="billing" id="check-2">
 											<label for="check-2">Set as default billing address</label>
 										</div>
 									</fieldset>
@@ -182,7 +182,7 @@
 									</div>
 									<div class="billing-form__item">
 										<label for="state" class="billing-form__label">State*</label>
-										<select class="billing-form__select" name="state" id="state">
+										<select class="billing-form__select" name="state" id="state" required>
 											<option value="state">State</option>
 											<option value="alabama">Alabama</option>
 											<option value="hawaii">Hawaii</option>
@@ -191,7 +191,7 @@
 									</div>
 									<div class="billing-form__item">
 										<label for="postal" class="billing-form__label">Postal Code*</label>
-										<input class="billing-form__input" type="text" name="postal" id="postal" autocomplete="off" placeholder="Postal Code" required>
+										<input class="billing-form__input" type="number" name="postal" id="postal" autocomplete="off" placeholder="Postal Code" required>
 									</div>
 								</div>
 								<div class="billing-form__line ">
@@ -200,10 +200,10 @@
 								</div>
 								<fieldset class="billing-form__gruop">
 									<div class="billing-form__continue">
-										<a href="#" class="billing-form__link ">Continue to delivery</a>
+										<button type="submit" class="billing-form__link ">Continue to delivery</button>
 									</div>
 									<div class="billing-form__checkbox">
-										<input class="billing-form__check" type="checkbox" name="checkout" id="checkout" required>
+										<input class="billing-form__check" type="checkbox" name="checkout" id="checkout">
 										<label for="checkout">Save my information for a faster checkout</label>
 									</div>
 								</fieldset>
@@ -275,7 +275,7 @@
 												</div>
 												<div class="card__form form-card">
 													<div class="form-card__line">
-														<input class="form-card__input" type="text" name="card-number" autocomplete="off" placeholder="Card number" required>
+														<input class="form-card__input" type="number" name="card-number" autocomplete="off" placeholder="Card number" required>
 													</div>
 													<div class="form-card__line">
 														<input class="form-card__input" type="text" name="card-name" autocomplete="off" placeholder="Name of card" required>
@@ -284,7 +284,7 @@
 														<input class="form-card__input" type="text" name="date" autocomplete="off" placeholder="Expiration date (MM/YY)" required>
 													</div>
 													<div class="form-card__line">
-														<input class="form-card__input" type="text" name="code" autocomplete="off" placeholder="Security Code" required>
+														<input class="form-card__input" type="password" name="code" autocomplete="off" placeholder="Security Code" required>
 														<button class="form-card__button">
 															<img src="img/cards/eye.svg" alt="ege">
 														</button>
