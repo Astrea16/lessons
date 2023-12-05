@@ -644,6 +644,8 @@ body {
   .best-seller {
     padding: 226px 0px 70px 0px;
   }
+  .best-seller.best-seller--green,
+  .best-seller.best-seller--white,
   .articles {
     padding: 70px 0;
   }
