@@ -183,7 +183,7 @@ body {
 }
 .best-seller__column {
   padding: 0 15px;
-  flex: 1 0 25%;
+  flex: 0 1 25%;
 }
 
 .item-best-seller {
