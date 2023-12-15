@@ -1,0 +1,320 @@
+//Обнулення
+
+@import "_reset.scss";
+@import url("https://fonts.googleapis.com/css?family=Cabin:600&display=swap");
+// FONTS
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap");
+
+// Зміні
+$color: #37393f;
+$white: #fff;
+$green: #40ddb6;
+$violet: #6b77e5;
+$gray: #f4f4f4;
+$menu-body: #e4dbdb;
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: $color;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: clip;
+}
+.wrapper > main {
+  flex-grow: 1;
+}
+[class*="__container"] {
+  max-width: 1250px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+@import "_blocks.scss";
+//HEADER
+@import "_header.scss";
+
+//HERO
+
+.page {
+  // .page__hero
+  &__hero {
+  }
+  // .page__price
+  &__price {
+  }
+}
+.hero {
+  @media (max-width: 767.98px) {
+    padding-top: 70px;
+    text-align: center;
+    &__container {
+      background-color: rgba(55, 57, 63, 0.91);
+      color: $white;
+    }
+    //.hero__body
+    .hero__body {
+      padding: 20px 0px 20px;
+    }
+    // .hero__sub-title
+    &__sub-title {
+      justify-content: center;
+    }
+    // .hero__image
+    .hero__image {
+      aspect-ratio: 767 / 458;
+      position: relative;
+      display: flex;
+    }
+  }
+  @media (max-width: 574.78px) {
+    padding-top: 54px;
+  }
+  // .hero__image
+  .hero__image {
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__title {
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+  // .hero__sub-title
+  &__sub-text {
+    margin-bottom: 12px;
+  }
+  @media (min-width: 768px) {
+    padding: 189px 0px 0px 0px;
+    display: flex;
+    position: relative;
+
+    // .hero__content
+    &__content {
+      flex: 0 0 100%;
+    }
+    //.hero__container
+    &__container {
+      display: flex;
+      align-items: center;
+      position: relative;
+      min-height: 100%;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        left: 500px;
+        background-color: rgba(55, 57, 63, 0.91);
+        z-index: 4;
+        transform: translate(-100%, 0);
+        @media (max-width: 891.98px) {
+          left: 370px;
+        }
+      }
+    }
+    //.hero__body
+    &__body {
+      color: $white;
+      position: relative;
+      z-index: 5;
+      width: 48%;
+      transform: translateX(0);
+
+      @media (min-width: 1499.98px) {
+        transform: translateX(-17%);
+      }
+      @media (min-width: 1799.98px) {
+        transform: translateX(-35%);
+      }
+    }
+
+    // .hero__title
+    &__title {
+      font-size: 60px;
+      @media (max-width: 1499.98px) {
+        font-size: 40px;
+      }
+    }
+
+    // .hero__image
+    &__image {
+      position: relative;
+      flex: 0 0 76.4%;
+      transform: translate(-100%, 0);
+      aspect-ratio: 1464 /458;
+    }
+  }
+  &__image {
+    @media (max-width: 1439.98px) {
+      aspect-ratio: 980 /458;
+    }
+    @media (max-width: 1199.98px) {
+      aspect-ratio: 980 /458;
+    }
+    @media (max-width: 991.98px) {
+      aspect-ratio: 800 /458;
+    }
+  }
+  @media (max-width: 1024px) {
+    padding: 80px 0px 0px 0px;
+  }
+  @media (max-width: 909.98px) {
+    padding: 70px 0px 0px 0px;
+  }
+}
+/*===============================================================================================*/
+
+//PRICE
+.price {
+	@media (min-width: 768px) {
+		padding-top: 50px;
+	 }
+	@media (min-width: 1024px) {
+		padding-top: 70px;
+	 }
+  @media (min-width: 1440px) {
+    padding-top: 90px;
+  }
+  @media (min-width: 1920px) {
+	padding-top: 150px;
+ }
+  padding-bottom: 150px;
+  // .price__container
+  &__container {
+  }
+  // .price__titles
+  &__titles {
+    &:not(:last-child) {
+      margin: 0px 0px 90px 0px;
+    }
+  }
+  // .price__cards
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(386px, 1fr));
+    gap: 31px;
+  }
+  // .price__card
+  &__card {
+  }
+}
+.titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 16px;
+  &__title {
+    max-width: 620px;
+  }
+}
+
+.card-price {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s;
+  min-width: 100%;
+  justify-content: flex-end;
+  //.card-price__sub-text
+  &__sub-text {
+    width: 100%;
+    padding: 10px 0;
+    background-color: $green;
+    color: $white;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    
+  }
+  //.card-price__body
+  &__body {
+    padding: 47px 31px;
+    text-align: center;
+    background-color: $gray;
+    transition: background-color 0.5s;
+  }
+  // .card-price__title
+  &__title {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 25px;
+  }
+  // .card-price__cost
+  &__cost {
+    padding: 23px 37px;
+    border-top: 1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
+  }
+  // .card-price__value
+  &__value {
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.1;
+    span {
+      font-size: 20px;
+    }
+    &:not(:last-child) {
+      margin-bottom: 23px;
+    }
+  }
+  // .card-price__payment
+  &__payment {
+    color: #208068;
+    font-size: 18px;
+    line-height: 1.57;
+    background-color: $green;
+  }
+  // .card-price__content
+  &__content {
+    padding: 34px 0;
+    color: #7d7d7d;
+    line-height: 135%;
+    p:not(:last-child) {
+      margin-bottom: 24px;
+    }
+    span {
+      color: $color;
+      font-weight: 700;
+    }
+  }
+  // .card-price__button
+  &__button {
+    transition: all 0.5s;
+  }
+  @media (any-hover: hover) {
+    &:hover {
+      color: $white;
+    }
+    
+    &:hover &__body {
+      background-color: $violet;
+    }
+    &:hover &__payment {
+      color: $violet;
+      background-color: $white;
+    }
+    &:hover &__content {
+      color: $white;
+      span {
+        color: $green;
+      }
+    }
+    &:hover &__button {
+      background-color: $white;
+      color: $violet;
+    }
+  }
+}
