@@ -1,3 +1,38 @@
+//LOGO
+.logo {
+  position: relative;
+  display: flex;
+  column-gap: 5px;
+  align-items: center;
+  flex-shrink: 0;
+  color: $dark;
+  font-family: "Poppins", sans-serif;
+  @include adaptiveValue("font-size", 25, 20, 0, 1270, 574.98);
+  font-weight: 700;
+  line-height: 1.2;
+  z-index: 5;
+  transition: color 0.5s;
+  img {
+    flex: 0 0 toRem(42);
+    @include adaptiveValue("width", 42, 32, 0, 1270, 574.98);
+  }
+  span {
+    color: $violet;
+  }
+  @media (any-hover: hover) {
+    &:hover {
+      color: $violet;
+      span {
+        color: $dark;
+      }
+    }
+  }
+  @media (max-width: toEm(574.98)) {
+    img {
+      flex: 0 0 toRem(32);
+    }
+  }
+}
 //BUTTON
 .button {
   display: inline-flex;
@@ -17,9 +52,12 @@
     }
   }
   @media (max-width: toEm(1023.98)) {
-    height: toRem(40);
+    height: toRem(50);
   }
-
+  @media (max-width: toEm(479.98)) {
+    //  flex-grow: 1;
+    width: 100%;
+  }
   &--green {
     background-color: $green;
     padding-left: toRem(27);
@@ -45,7 +83,7 @@
     font-weight: 500;
     line-height: 1.2;
     &:not(:last-child) {
-      margin-bottom: toRem(16);
+      margin-bottom: toEm(15);
     }
     &::before {
       content: "";
@@ -56,7 +94,7 @@
   }
   // .block-header__title
   &__title {
-    font-size: toRem(40);
+    @include adaptiveValue("font-size", 40, 25, 0, 1270, 992);
     color: $dark;
     line-height: 1.2;
     font-weight: 700;
@@ -72,5 +110,53 @@
     }
   }
 }
-.text {
+/*===============================================================================================*/
+/*--CONTENT-ARTICLE-----------------------------------------------------------------------------------------*/
+
+.content-article {
+  // .content-article__title
+  &__title {
+    color: $dark;
+    font-family: $helperFont, sans-serif;
+    @include adaptiveValue("font-size", 30, 22, 0, 1270, 992);
+    font-weight: 600;
+    line-height: 121%;
+    transition: color 0.5s;
+    &:not(:last-child) {
+      margin-bottom: toRem(15);
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        color: $violet;
+      }
+    }
+  }
+  // .content-article__text
+  &__text {
+    line-height: 1.4;
+    &:not(:last-child) {
+      margin-bottom: toRem(15);
+    }
+  }
+  // .content-article__button
+  &__button {
+    font-weight: 600;
+    text-transform: capitalize;
+    text-decoration: underline;
+    transition: text-decoration-color 0.5s;
+    @media (any-hover: hover) {
+      &:hover {
+        text-decoration-color: transparent;
+      }
+    }
+  }
+}
+
+/*===============================================================================================*/
+/*-------------------------------------------------------------------------------------------*/
+.input {
+  width: 100%;
+  height: toRem(65);
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
 }

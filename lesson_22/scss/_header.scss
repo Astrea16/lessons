@@ -125,47 +125,20 @@
 
   // .social__link
   &__link {
-    transition: background 0.5s;
-    width: toRem(18);
-    height: toRem(18);
-  }
-  // .social__link--inst
-  &__link--inst {
-    background: url("../img/header/social/insta.svg") center / cover no-repeat;
-    @media (any-hover: hover) {
-      &:hover {
-        background: url("../img/header/social/insta_2.svg") center / cover no-repeat;
-      }
-    }
-  }
-
-  // .social__link--fb
-  &__link--fb {
-    background: url("../img/header/social/facebook.svg") center / cover no-repeat;
-    @media (any-hover: hover) {
-      &:hover {
-        background: url("../img/header/social/facebook_2.svg") center / cover no-repeat;
-      }
-    }
-  }
-  // .social__link--tw
-  &__link--tw {
     width: toRem(19);
-    height: toRem(16);
-    background: url("../img/header/social/twiter.svg") center / cover no-repeat;
-    @media (any-hover: hover) {
-      &:hover {
-        background: url("../img/header/social/twiter_2.svg") center / cover no-repeat;
+    height: toRem(19);
+    display: flex;
+    align-items: center;
+    & {
+      svg path {
+        transition: fill 0.5s;
       }
     }
-  }
-
-  // .social__link--pnt
-  &__link--pnt {
-    background: url("../img/header/social/pintrest.svg") center / cover no-repeat;
     @media (any-hover: hover) {
       &:hover {
-        background: url("../img/header/social/pintrest_2.svg") center / cover no-repeat;
+        svg path {
+          fill: $green;
+        }
       }
     }
   }
@@ -181,42 +154,6 @@
     @include adaptiveValue("padding-top", 30, 15, 0, 1250, 1023.98);
     @include adaptiveValue("padding-bottom", 30, 15, 0, 1250, 1023.98);
     min-height: toRem(50);
-  }
-
-  // .bottom-header__logo
-  &__logo {
-    position: relative;
-    display: flex;
-    column-gap: 5px;
-    align-items: center;
-    flex-shrink: 0;
-    color: $dark;
-    font-family: "Poppins", sans-serif;
-    @include adaptiveValue("font-size", 25, 20, 0, 1270, 574.98);
-    font-weight: 700;
-    line-height: 1.2;
-    z-index: 5;
-    transition: color 0.5s;
-    img {
-      flex: 0 0 toRem(42);
-      @include adaptiveValue("width", 42, 32, 0, 1270, 574.98);
-    }
-    span {
-      color: $violet;
-    }
-    @media (any-hover: hover) {
-      &:hover {
-        color: $violet;
-      }
-      span {
-        color: $dark;
-      }
-    }
-    @media (max-width: toEm(574.98)) {
-      img {
-        flex: 0 0 toRem(32);
-      }
-    }
   }
 
   // .bottom-header__buttons
@@ -240,7 +177,7 @@
 }
 .menu {
   flex: 1 1 auto;
-  @media (max-width: toEm(1023.98)) {
+  @media (max-width: toEm(991.98)) {
     // .menu__body
     &__body {
       position: fixed;
@@ -286,7 +223,7 @@
     flex-wrap: wrap;
     @include adaptiveValue("row-gap", 10, 25, 0, 1270, 1023.98);
 
-    @media (max-width: toEm(1023.98)) {
+    @media (max-width: toEm(991.98)) {
       flex-direction: column;
       text-align: right;
     }
@@ -336,7 +273,7 @@
         }
       }
     }
-    @media (max-width: toEm(1023.98)) {
+    @media (max-width: toEm(991.98)) {
       .menu__link {
         display: block;
       }
@@ -354,7 +291,7 @@
         text-shadow: 1px -0px 2px $violet;
       }
     }
-    @media (max-width: toEm(1023.98)) {
+    @media (max-width: toEm(991.98)) {
       font-size: toRem(20);
     }
   }
@@ -369,6 +306,10 @@
   transition: all 0.5s;
   visibility: hidden;
   opacity: 0;
+  pointer-events: none;
+  @media (max-width: toEm(991.98)) {
+    pointer-events: all;
+  }
   //.sub-menu__list
   &__list {
     width: toRem(180);
@@ -376,7 +317,7 @@
     background-color: $violet;
     border-radius: 0 toRem(30);
     box-shadow: inset 0 0 10px #000, 0 0 10px #000;
-    @media (max-width: toEm(1023.98)) {
+    @media (max-width: toEm(991.98)) {
       width: 100%;
       border-radius: 0;
     }
@@ -390,7 +331,7 @@
   // .sub-menu__link
   &__link {
     display: block;
-    @include adaptiveValue("font-size", 16, 18, 0, 1023.98, 1023.98);
+    @include adaptiveValue("font-size", 16, 18, 0, 1200.98, 1023.98);
     color: #000;
     transition: background-color 0.5s;
     padding: toRem(5);
@@ -401,7 +342,7 @@
       }
     }
   }
-  @media (max-width: toEm(1023.98)) {
+  @media (max-width: toEm(991.98)) {
     position: relative;
     transform: translate(0px, 0px);
     visibility: visible;
@@ -414,7 +355,7 @@
 
 .icon-menu {
   display: none;
-  @media (max-width: toRem(1023.98)) {
+  @media (max-width: toRem(991.98)) {
     & {
       position: relative;
       display: block;
