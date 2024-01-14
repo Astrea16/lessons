@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Java Script - основи</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header">
+
+			</div>
+			<main class="page">
+				<div class="page__container">
+					<h1 class="page__title">Hello</h1>
+
+					<div class="page__block">
+						<div class="page__exercise">
+							<h2 class="page__second-title">ЗАДАЧА №1</h2>
+							<div class="page__text">
+								<p>Що потрапить в консоль?</p>
+
+								<p>
+									let someVarSecond = 0;
+								</p>
+								<p>++someVarSecond; </p>
+
+								<p>if (someVarSecond) {</p>
+								<p>console.log(someVarSecond);</p>
+								<p>}</p>
+							</div>
+
+						</div>
+						<div class="page__answer answer">
+							<h2 class="answer__title">Відповідь: <strong>1</strong></h2>
+							<div class="answer__text">
+								<p>в консоль потрапить 1 тому що зміну someVarSecond збільшили на одиницю </p>
+							</div>
+						</div>
+					</div>
+					<div class="page__block">
+						<div class="page__exercise">
+							<h2 class="page__second-title">ЗАДАЧА №2</h2>
+							<div class="page__text">
+								<p>За допомогою циклу FOR виведіть в консоль 10 рядків</p>
+
+								<p>
+									Пункт №1
+								</p>
+								<p>Пункт №2 </p>
+								<p>і т.д.</p>
+							</div>
+
+
+						</div>
+						<div class="page__answer answer">
+							<h2 class="answer__title">Відповідь: </h2>
+							<div class="answer__text">
+								<p>for (let i = 1; i <= 10; i++) {</p>
+										<p>let item = `Пункт №${i}`;</p>
+										<p> console.log(item);</p>
+										<p>}</p>
+							</div>
+						</div>
+					</div>
+					<div class="page__block">
+						<div class="page__exercise">
+							<h2 class="page__second-title">ЗАДАЧА №3</h2>
+							<div class="page__text">
+								<p>Що потрапить в консоль ?</p>
+
+								<p> if (2 * 20 <= 10 || (30 / 2 < 5 && 10 <="10" ) || 20==="20" ) { </p>
+										<p> console.log("000");</p>
+										<p>}</p>
+							</div>
+						</div>
+						<div class="page__answer answer">
+							<h2 class="answer__title">Відповідь: <strong>false</strong></h2>
+							<div class="answer__text">
+								<p>Найвищий приоритет мають () з них і починаємо</p>
+								<p>if (2 * 20 <= 10 || (15 < 5 && true) || 20==="20" )</p>
+										<p>if (2 * 20 <=10 || (false && true) || 20==="20" )</p>
+												<p>if (40 <=10 || false || 20==="20" )</p>
+														<p> false|| false || false </p>
+							</div>
+						</div>
+					</div>
+					<div class="page__block">
+						<div class="page__exercise">
+							<h2 class="page__second-title">ЗАДАЧА №4</h2>
+							<div class="page__text">
+								<p>Створіть функцію, яка повертає результат ділення числа a на число b з додаванням рядка "Результат ділення: "</p>
+								<p>Викличте функцію передаючі різні значення, у тому числі не передаючи зовсім.</p>
+								<p>Функція не має повертати NaN, Infinite або помилку</p>
+							</div>
+						</div>
+						<div class="page__answer answer">
+							<h2 class="answer__title">Відповідь: <strong> Дивитись в консолі</strong></h2>
+							<div class="answer__text">
+								<p>function calcDivision(a = 0, b = 0) {</p>
+								<p>const result = a / b;</p>
+								<p>let divisionContent = "Результат ділення:";</p>
+								<p>let divisionContentError = "Ділити не можна";</p>
+								<p>if (typeNumber(a) && typeNumber(b)) {</p>
+								<p> if (b !== 0) {</p>
+								<p>return (divisionContent += result);</p>
+								<p>}</p>
+								<p>} else {</p>
+								<p> return (divisionContent += divisionContentError);</p>
+								<p>}</p>
+								<p> }</p>
+								<p> function funcResult(text = "Нічого не вказано") {</p>
+								<p>console.log(text);</p>
+								<p>}</p>
+								<p>let typeNumber = (someVar) => (typeof someVar == "number" ? someVar : false);</p>
+								<p>funcResult();</p>
+								<p>funcResult(calcDivision());</p>
+								<p> funcResult(calcDivision(6, 2));</p>
+								<p>funcResult(calcDivision(12, 0));</p>
+								<p>funcResult(calcDivision(12, "12"));</p>
+								<p> funcResult(calcDivision(12, true));</p>
+								<p>funcResult(calcDivision(45, 10));</p>
+							</div>
+						</div>
+					</div>
+					<div class="page__block">
+						<div class="page__exercise">
+							<h2 class="page__second-title">ЗАДАЧА №5</h2>
+							<div class="page__text">
+								<p> Створіть масив даних - 5 елементів, один з яких число 10</p>
+								<p>Обробіть масив за допомогою методу перебору </p>
+								<p> Перевіряйте елемент на відповідність числу 10, та у разі відповідності, виводьте в консоль</p>
+							</div>
+						</div>
+						<div class="page__answer answer">
+							<h2 class="answer__title">Відповідь: <strong>В ячейці 4 число 10 </strong> </h2>
+							<div class="answer__text">
+								<p>let someArray = ["Hi", true, "hello", 18, 10];</p>
+								<p>console.log(someArray);</p>
+								<p>someArray.forEach((value, index) => {</p>
+								<p>if (value === 10) {</p>
+								<p>console.log(index);</p>
+								<p>console.log(value);</p>
+								<p>}</p>
+								<p>});</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</main>
+		</header>
+	</div>
+	<script src="js/script.js"></script>
+
+</body>
+
+</html>
