@@ -1,0 +1,286 @@
+.footer {
+  background-color: $dark;
+  @include adaptiveValue("padding-top", 95, 50, 0, 1270, 769);
+  @include adaptiveValue("padding-bottom", 95, 50, 0, 1270, 769);
+  color: $white;
+  // .footer__container
+  &__container {
+  }
+  // .footer__top
+  &__top {
+  }
+  // .footer__contacts
+  &__contacts {
+  }
+  // .footer__center
+  &__center {
+  }
+  // .footer__bottom
+  &__bottom {
+  }
+  .logo {
+    color: white;
+    span {
+      color: $green;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: $green;
+        span {
+          color: $violet;
+        }
+      }
+    }
+  }
+}
+.top-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: toRem(40);
+  align-items: center;
+  flex-wrap: wrap;
+  @include adaptiveValue("padding-bottom", 54, 20, 0, 1270, 1200);
+  @media (max-width: toEm(954.98)) {
+    justify-content: center;
+  }
+}
+
+.contacts-footer {
+  display: flex;
+  @include adaptiveValue("column-gap", 60, 20, 0, 1270, 1200);
+  flex-wrap: wrap;
+  row-gap: toRem(20);
+  // .contacts-footer__item
+  &__item {
+    display: flex;
+    align-items: center;
+    column-gap: toRem(10);
+  }
+  // .contacts-footer__icon
+  &__icon {
+    flex: 0 0 toRem(68);
+    width: toRem(68);
+    height: toRem(68);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4c4d52;
+    border-radius: 50%;
+    img {
+      max-width: 100%;
+    }
+    @media (max-width: toEm(991.98)) {
+      flex: 0 0 toRem(58);
+      width: toRem(58);
+      height: toRem(58);
+    }
+  }
+
+  // .contacts-footer__body
+  &__body {
+    a {
+      transition: color 0.5s;
+    }
+    @media (any-hover: hover) {
+      a:hover {
+        color: $violet;
+      }
+    }
+  }
+  // .contacts-footer__title
+  &__title {
+    font-family: $helperFont, sans-serif;
+    font-weight: 600;
+    @include adaptiveValue("font-size", 20, 18, 0, 1270, 1200);
+    &:not(:last-child) {
+      margin-bottom: toRem(5);
+    }
+  }
+}
+.center-footer {
+  @include adaptiveValue("padding-top", 50, 20, 0, 1270, 992);
+  @include adaptiveValue("padding-bottom", 50, 20, 0, 1270, 992);
+  border-top: toRem(1) solid #6c6d72;
+  border-bottom: toRem(1) solid #6c6d72;
+  display: flex;
+  justify-content: space-between;
+  gap: toRem(30);
+  column-gap: toRem(30);
+  row-gap: toRem(20);
+  flex-wrap: wrap;
+  @media (max-width: toEm(1033.98)) {
+    flex-direction: column;
+  }
+  // .center-footer__navs
+  &__navs {
+    display: flex;
+    @include adaptiveValue("column-gap", 100, 35, 0, 1270, 1024);
+    flex-wrap: wrap;
+  }
+  // .center-footer__nav
+  &__nav {
+  }
+  // .center-footer__form
+  &__form {
+  }
+}
+.nav-footer {
+  // .nav-footer__title
+  &__title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: toRem(4);
+    font-family: $helperFont, sans-serif;
+    font-size: toRem(20);
+    font-weight: 600;
+    line-height: 1.2;
+    color: $green;
+    margin-bottom: toRem(30);
+    @media (max-width: toEm(1033.98)) {
+      margin-bottom: toRem(0);
+      padding: 0 toRem(15) toRem(20) toRem(15);
+      border-bottom: toRem(1) solid #6c6d72;
+      width: 100%;
+    }
+    &::before {
+      content: "";
+      flex: 0 0 toRem(13);
+      width: toRem(13);
+      height: toRem(13);
+      background-color: $violet;
+    }
+    &::after {
+      @media (max-width: toEm(1033.98)) {
+        content: "";
+        position: absolute;
+        top: toRem(7);
+        right: toRem(15);
+        margin-bottom: toRem(-7);
+        width: toRem(22);
+        height: toRem(14);
+        background: url("../img/footer/arrow.svg") center / cover no-repeat;
+        transition: transform 0.5s;
+      }
+    }
+    &._active::after {
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+  //.nav-footer__body
+  &__body {
+    @media (max-width: toEm(1033.98)) {
+      padding-top: toRem(15);
+      padding-bottom: toRem(15);
+      border-bottom: toRem(1) solid #6c6d72;
+    }
+  }
+  ul {
+    display: grid;
+    row-gap: toRem(25);
+    li {
+      @media (max-width: toEm(1033.98)) {
+        padding-right: toRem(25);
+        text-align: right;
+      }
+    }
+  }
+
+  a {
+    transition: color 0.5s;
+    @media (max-width: toEm(1033.98)) {
+      font-size: toRem(18);
+    }
+  }
+  @media (any-hover: hover) {
+    a:hover {
+      color: $green;
+    }
+  }
+}
+.form-footer {
+  @include adaptiveValue("padding-top", 42, 30, 0, 1033.98, 992);
+  @include adaptiveValue("padding-bottom", 42, 30, 0, 1033.98, 992);
+  @include adaptiveValue("padding-left", 36, 20, 0, 1033.98, 992);
+  @include adaptiveValue("padding-right", 36, 20, 0, 1033.98, 992);
+  background: #474950;
+  // .form-footer__title
+  &__title {
+    font-family: $helperFont, sans-serif;
+    font-size: toRem(20);
+    @include adaptiveValue("font-size", 20, 18, 0, 1033.98, 992);
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: toEm(15, 20);
+  }
+  // .form-footer__sub-text
+  &__sub-text {
+    line-height: 1.2;
+    &:not(:last-child) {
+      margin-bottom: toRem(23);
+    }
+  }
+  // .form-footer__small
+  &__small {
+    display: flex;
+    flex-wrap: wrap;
+    input {
+      height: toRem(65);
+      padding-left: toRem(15);
+      padding-right: toRem(5);
+      @media (max-width: toEm(1033.98)) {
+        width: 75%;
+      }
+      @media (max-width: toEm(991.98)) {
+        height: toRem(50);
+      }
+      @media (max-width: toEm(610.98)) {
+        width: 100%;
+        margin-bottom: toRem(10);
+      }
+    }
+  }
+  //.form-footer__button
+  &__button {
+    padding-left: toRem(27);
+    padding-right: toRem(27);
+    @media (max-width: toEm(1033.98)) {
+      flex-grow: 1;
+    }
+    @media (max-width: toEm(1023.98)) {
+      height: toRem(65);
+    }
+    @media (max-width: toEm(991.98)) {
+      height: toRem(50);
+    }
+  }
+}
+
+.bottom-footer {
+  padding-top: toRem(22);
+  display: flex;
+  justify-content: space-between;
+  gap: toRem(15);
+  flex-wrap: wrap;
+  @include adaptiveValue("font-size", 18, 14, 0, 1270, 992);
+  @media (max-width: toEm(788.98)) {
+    justify-content: center;
+  }
+  // .bottom-footer__copyright
+  &__copyright {
+    line-height: 1.5;
+    span:first-child {
+      color: $green;
+    }
+    span:nth-child(2) {
+      color: $violet;
+    }
+    @media (max-width: toEm(788.98)) {
+      text-align: center;
+    }
+  }
+  // .bottom-footer__social
+  &__social {
+  }
+}
