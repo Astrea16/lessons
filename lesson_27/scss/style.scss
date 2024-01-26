@@ -1,0 +1,315 @@
+@use "sass:math";
+
+// Шрифти
+@import "_fonts.scss";
+// Обнулення
+@import "_reset.scss";
+// Компоненти
+// Функції
+@import "_functions.scss";
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1920;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1170;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+$mainFont: "Cormorant Infant";
+
+body {
+  background-color: #333;
+  font-size: toRem(25);
+  color: #fff;
+  line-height: 1.2;
+  font-family: serif;
+  font-family: $mainFont, serif;
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.5s;
+  &.loaded {
+    opacity: 1;
+  }
+  .menu-open & {
+    overflow: hidden;
+  }
+}
+.wrapper {
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.wrapper main {
+  flex-grow: 1;
+}
+[class*="__container"] {
+  max-width: toRem(1230);
+  padding-left: toRem(15);
+  padding-right: toRem(15);
+  margin: 0 auto;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #321f1f;
+  z-index: 50;
+  &.footer-background {
+    background-color: #0000ff;
+  }
+  // .header__container
+  &__container {
+    min-height: toRem(80);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background 0.5s;
+    column-gap: toRem(20);
+    row-gap: toRem(10);
+  }
+  // .header__logo
+  &__logo {
+    flex: 0 0 toRem(45);
+    width: toRem(45);
+    max-width: 100%;
+    z-index: 5;
+  }
+  // .header__menu
+  &__menu {
+    flex: 1 1 auto;
+  }
+}
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  // .menu__body
+  &__body {
+    @media (max-width: toEm(599.98)) {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: -100%;
+      background-color: rgba(50, 31, 31, 0.924);
+      padding: toRem(90) toRem(15) toRem(30) toRem(15);
+      overflow: auto;
+      &::before {
+        content: "";
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: toRem(70);
+        background-color: #321f1f;
+        z-index: 4;
+      }
+      .menu-open & {
+        left: 0;
+      }
+    }
+  }
+  // .menu__list
+  &__list {
+    text-align: right;
+    overflow: auto;
+    @media (min-width: toEm(600)) {
+      display: flex;
+      justify-content: flex-end;
+      column-gap: toRem(30);
+      row-gap: toRem(10);
+      flex-wrap: wrap;
+    }
+  }
+  // .menu__item
+  &__item {
+    @media (max-width: toEm(599.98)) {
+      margin-bottom: toRem(25);
+    }
+  }
+  // .menu__link
+  &__link {
+    text-transform: uppercase;
+    transition: all 0.5s;
+    position: relative;
+    line-height: 1.2;
+    //  text-decoration: underline;
+    //  text-decoration-color: transparent;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: toRem(3);
+      background-color: #fff;
+      transition: all 0.5s;
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        color: #9acd32;
+        //   text-decoration-color: #9acd32;
+        /*
+        &::before {
+          left: 0;
+          width: 100%;
+          background-color: #9acd32;
+        }
+		  */
+      }
+    }
+  }
+}
+.icon-menu {
+  display: none;
+  @media (max-width: toEm(599.98)) {
+    display: block;
+    width: toRem(40);
+    height: toRem(20);
+    position: relative;
+    z-index: 5;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+      .menu-open & {
+        transform: rotate(-45deg);
+        top: 50%;
+        margin-top: toRem(-1);
+      }
+    }
+    span {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin-top: toRem(-1);
+      width: 100%;
+      height: toRem(2);
+      background-color: #fff;
+      .menu-open & {
+        transform: scale(0);
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+      .menu-open & {
+        transform: rotate(45deg);
+        bottom: 50%;
+        margin-bottom: toRem(-1);
+      }
+    }
+  }
+}
+
+.footer {
+  min-height: toRem(80);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  transition: background 0.5s;
+  background-color: #321f1f;
+}
+
+.page {
+  padding: toRem(25);
+  padding-top: toRem(100);
+  // .page__container
+  &__container {
+  }
+  p:not(:last-child) {
+    margin-bottom: toRem(30);
+  }
+  // .page__link
+  &__link,
+  &__button {
+    text-transform: uppercase;
+    font-size: toRem(70);
+    @include adaptiveValue("font-size", 70, 30);
+  }
+  &__button {
+    padding: toRem(50) toRem(70);
+    background-color: red;
+    transform: translate(0px, 70px);
+    opacity: 0;
+    visibility: hidden;
+
+    &.show {
+      transition: all 0.8s;
+      transform: translate(0px, 0px);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  // .page__list
+  &__list {
+    flex-direction: column;
+    &:not(:last-child) {
+      margin-bottom: toRem(40);
+    }
+  }
+  // .page__item
+  &__item {
+    font-size: toRem(30);
+    text-transform: uppercase;
+    transition: color 0.5s;
+    cursor: pointer;
+    &:not(:last-child) {
+      margin-bottom: toRem(10);
+    }
+    &.active {
+      color: #ff0000;
+    }
+  }
+  //.page__counter
+  &__counter {
+    margin: toRem(30) auto;
+  }
+  // .page__input
+  &__input {
+    height: toRem(70);
+    padding-left: toRem(10);
+    border-radius: toRem(10);
+    &:not(:last-child) {
+      margin: toRem(30);
+    }
+  }
+}
+.counter {
+  text-align: center;
+
+  max-width: toRem(117);
+  font-size: toRem(80);
+  padding: toRem(10);
+  background-color: #9acd32;
+  border-radius: 50%;
+}
+// .page__code
+.button__code {
+  font-size: toRem(40);
+  cursor: pointer;
+}
+.title {
+  @include adaptiveValue("font-size", 80, 30);
+  color: #ff0000;
+}
